@@ -15,7 +15,7 @@
 | ------------- |:-------------:|
 | Adding transition to elements     | In Progress | 
 | Build Section      | Not Started      |
-| Add QR Code | Not Started      |
+| Skills  | In Progress      |
 | Add QR Code | Not Started      |
 | Add QR Code | Not Started      |
 | Add QR Code | Not Started      |
