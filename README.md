@@ -17,7 +17,7 @@
 | Build Section      | Not Started      |
 | Skills  | In Progress      |
 | Animations | Not Started      |
-| Education and Schooling | Not Started      |
+| Education and Schooling | In Progress      |
 | Finishing adding more books  | Not Started      |
 | Add QR Code | Not Started      |
 
