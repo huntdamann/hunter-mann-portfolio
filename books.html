@@ -46,84 +46,163 @@
           ></div>
         </div>
         <section style="display: block">
-          <header>
-            <nav
-              class="flex flex-column items-center justify-between p-10 sm:px-16"
-            >
-              <div class="z-[29]" style="opacity: 1; transform: none">
-                <h1
-                  class="mr-auto font-grotesk-bold leading-4 tracking-tighter p-4"
-                >
-                  <a
-                    class="hover:text-primary ease-in-out duration-300"
-                    href="/"
-                  >
-                    <h1 class="text-[1.75rem]">
-                      <span
-                        class="inline-block"
-                        style="opacity: 1; transform: none"
-                      >
-                        k
-                      </span>
-                      <span
-                        class="inline-block"
-                        style="opacity: 1; transform: none"
-                        >o</span
-                      >
-                      <span
-                        class="inline-block"
-                        style="opacity: 1; transform: none"
-                        >s</span
-                      >
-                      <span
-                        class="inline-block"
-                        style="opacity: 1; transform: none"
-                        >t</span
-                      >
-                      <span
-                        class="inline-block"
-                        style="opacity: 1; transform: none"
-                        >y</span
-                      >
-                      <span
-                        class="inline-block"
-                        style="opacity: 1; transform: none"
-                        >a</span
-                      >
-                      <span
-                        class="inline-block"
-                        style="
-                          color: rgb(76, 96, 230);
-                          margin-left: 0.15rem;
-                          opacity: 1;
-                          transform: none;
-                        "
-                        >.</span
-                      >
+          <header class="">
+            <nav class="flex items-center justify-between small:p-5">
+                <!--Hunter Header-->
+                <div class="z-[29]" style="opacity: 1; transform: none;">
+                    <h1 class="mr-auto leading-4 tracking-tighter p-4">
+                        <a class="hover:text-primary ease-in-out duration-300" href="/">
+                            <h1 class="text-[1.75rem]">
+                                <span class="inline-block" style="opacity: 1; transform: none;">h</span>
+                                <span class="inline-block" style="opacity: 1; transform: none;">u</span>
+                                <span class="inline-block" style="opacity: 1; transform: none;">n</span>
+                                <span class="inline-block" style="opacity: 1; transform: none;">t</span>
+                                <span class="inline-block" style="opacity: 1; transform: none;">e</span>
+                                <span class="inline-block" style="opacity: 1; transform: none;">r</span>
+                                <span class="inline-block" style="color: rgb(29, 32, 221); margin-left: 0.15rem; opacity: 1; transform: none;">.</span>
+                            </h1>
+                        </a>
                     </h1>
-                  </a>
-                </h1>
-              </div>
-              <div class="sm:hidden z-20">
-                <svg
-                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium text-primary css-vubbuv"
-                  focusable="false"
-                  aria-hidden="true"
-                  viewBox="0 0 24 24"
-                  data-testid="MenuIcon"
-                >
-                  <path d="M3 18h18v-2H3zm0-5h18v-2H3zm0-7v2h18V6z"></path>
-                </svg>
-              </div>
-              <div
-                class="hidden sm:flex sm:gap-5 sm:font-mono sm:font-thin sm:uppercase sm:text-[0.75rem]"
-              >
-                <a href="/about">About</a>
-                <a href="/blog">Blog</a>
-                <a href="/books" style="font-weight: 500">626F6F6B73</a>
-              </div>
-            </nav>
-          </header>
+                </div>
+                <div id="burger-handle" onclick="burgerClick()" class="text-red-800">
+                    <i class="fa-solid fa-xl fa-bars-staggered"></i>
+                </div>
+                <nav id="menu-handle" class="menu" style="transform: translateY(0%) translateZ(0px);">
+                    <div class="flex flex-col justify-center items-center h-full font-rubik text-[1.5rem] gap-2">
+                        <div class="overflow-hidden text-center h-full pt-16 flex flex-col items-center justify-start">
+                            
+                            <div id="door-handle" onclick="doorClick()" class="absolute z-50 text-black top-[3rem] left-[17rem]">
+                                <i class="fa-solid fa-door-open"></i>
+                            </div>
+                            
+                            <div class="w-[100vw]">
+                                <hr class="bg-black opacity-50">
+                            </div>
+                            <div class="w-full flex items-center justify-between overflow-hidden" style="color: white; background: black;">
+                                <div class="flex">
+                                    <div class="p-2">
+                                        <p class="font-mono font-thin text-[0.5rem]">
+                                            [1]
+                                        </p>
+                                    </div>
+                                    <h1 class="text-[18vw] uppercase overflow-hidden pl-4 pr-3">
+                                        <div>
+                                            <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">h</span>
+                                            <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">o</span>
+                                            <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">m</span>
+                                            <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">e</span>
+                                        </div>
+                                    </h1>
+                        
+                                </div>
+                                <!--Nav Menu Arrow Buttom-->
+                                <div class="font-mono pr-4 overflow-hidden" style="opacity: 1; transform: none;">
+                                    <a href="/">
+                                        <div class="flex justify-center rounded-full items-center mr-1" style="background: white; width: 40px; height: 40px; font-size: 1.5rem; color: black;">↗
+                                        
+                                        
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="w-[100vw]">
+                                <hr class="bg-black opacity-50">
+                            </div>
+    
+                            <!-- Nav Blog Link-->
+                            <div class="w-full flex items-center justify-between  overflow-hidden">
+                                <div class="flex">
+                                    <div class="p-2">
+                                        <p class="font-mono font-thin text-[0.5rem]">
+                                            [2]
+                                        </p>
+                                    </div>
+                            <h1 class="text-[18vw] uppercase overflow-hidden pl-3">
+                                <div>
+                                    <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">b</span>
+                                    <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">l</span>
+                                    <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">o</span>
+                                    <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">g</span>
+                                </div>
+                            </h1>
+                                </div>
+                        <div class="font-mono pr-4 overflow-hidden" style="opacity: 1; transform: none;">
+                            <a href="https://huntdamann.github.io/">
+                                <div class="flex justify-center rounded-full items-center mr-1" style="background: black; width: 40px; height: 40px; font-size: 1.5rem; color: white;">↗
+                                </div>
+                            </a>
+                        </div>
+                            </div>
+    
+                            <div class="w-[100vw]">
+                                <hr class="bg-black opacity-50">
+                            </div>
+    
+                            <!-- About Link-->
+                            <!-- About Link-->
+                            <div class="w-full flex items-center justify-between overflow-hidden">
+                                <div class="flex">
+                                    <div class="p-2">
+                                        <p class="font-mono font-thin text-[0.5rem]">
+                                            [3]
+                                        </p>
+                                    </div>
+                            <h1 class="text-[18vw] uppercase overflow-hidden pl-2 pr-3">
+                                <div class="flex gap-[0.5rem]">
+                                    <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">a</span>
+                                    <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">b</span>
+                                    <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">o</span>
+                                    <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">u</span>
+                                    <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">t</span>
+                                </div>
+                            </h1>
+                                </div>
+                        <div class="font-mono pr-4 overflow-hidden" style="opacity: 1; transform: none;">
+                            <a href="/blog">
+                                <div class="flex justify-center rounded-full items-center mr-1" style="background: black; width: 40px; height: 40px; font-size: 1.5rem; color: white;">↗
+                                </div>
+                            </a>
+                        </div>
+                            </div>
+    
+                            <!--Line-->
+                            <div class="w-[100vw]">
+                                <hr class="bg-black opacity-50">
+                            </div>
+    
+                            <!-- Books Nav Link-->
+                            <div class="w-full flex items-center justify-between overflow-hidden">
+                                <div class="flex">
+                                    <div class="p-2">
+                                        <p class="font-mono font-thin text-[0.5rem]">
+                                            [4]
+                                        </p>
+                                    </div>
+                                    <h1 class="text-[18vw] uppercase overflow-hidden pl-2 pr-2">
+                                        <div class="flex gap-[0.5rem]">
+                                            <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">b</span>
+                                            <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">o</span>
+                                            <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">o</span>
+                                            <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">k</span>
+                                            <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">s</span>
+                                        </div>
+                                    </h1>
+                                </div>
+                            <div class="font-mono pr-4 overflow-hidden" style="opacity: 1; transform: none;">
+                                <a href="./books.html">
+                                    <div class="flex justify-center rounded-full items-center mr-1" style="background: black; width: 40px; height: 40px; font-size: 1.5rem; color: white;">↗
+                                    </div>
+                                </a>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                  
+                </nav>
+            
+    
+        
+        </header>
           <div class="flex flex-col items-center justify-center mb-14">
             <div>
               <div

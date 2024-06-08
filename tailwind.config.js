@@ -12,6 +12,7 @@ module.exports = {
     extend: {
       fontFamily: {
         main: ["Roboto", "sans-serif"],
+        engineer: ["Kanit", "sans-serif"]
       },
       colors: {
         "logo-red": "#D72323",
