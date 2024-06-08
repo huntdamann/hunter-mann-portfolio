@@ -942,6 +942,10 @@ video {
   height: 50%;
 }
 
+.h-\[6rem\] {
+  height: 6rem;
+}
+
 .h-\[85vh\] {
   height: 85vh;
 }
@@ -991,6 +995,10 @@ video {
   width: 65ch;
 }
 
+.w-\[6rem\] {
+  width: 6rem;
+}
+
 .w-\[80\%\] {
   width: 80%;
 }
@@ -1013,6 +1021,26 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-24 {
+  width: 6rem;
+}
+
+.w-\[20rem\] {
+  width: 20rem;
+}
+
+.w-\[10rem\] {
+  width: 10rem;
+}
+
+.w-\[13rem\] {
+  width: 13rem;
+}
+
+.w-\[14rem\] {
+  width: 14rem;
 }
 
 .flex-shrink {
@@ -1545,6 +1573,10 @@ video {
   gap: 0.5rem;
 }
 
+.gap-7 {
+  gap: 1.75rem;
+}
+
 .gap-\[0\.5rem\] {
   gap: 0.5rem;
 }
@@ -2014,14 +2046,14 @@ video {
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
 .bg-\[\#00171F\] {
   --tw-bg-opacity: 1;
   background-color: rgb(0 23 31 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#003459\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 52 89 / var(--tw-bg-opacity));
 }
 
 .bg-\[red\] {
@@ -2032,6 +2064,11 @@ video {
 .bg-\[rgb\(255\2c 0\2c 0\)\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-\[white\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-black {
@@ -2190,6 +2227,18 @@ video {
   padding: 1.5rem;
 }
 
+.p-8 {
+  padding: 2rem;
+}
+
+.p-9 {
+  padding: 2.25rem;
+}
+
+.p-\[3rem\] {
+  padding: 3rem;
+}
+
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
@@ -2303,6 +2352,16 @@ video {
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .text-\[0\.3rem\] {
   font-size: 0.3rem;
 }
@@ -2367,8 +2426,22 @@ video {
   font-size: 9vw;
 }
 
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .font-\[200\] {
   font-weight: 200;
+}
+
+.font-\[650\] {
+  font-weight: 650;
 }
 
 .font-bold {
@@ -2503,6 +2576,11 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-yellow-400 {
+  --tw-text-opacity: 1;
+  color: rgb(250 204 21 / var(--tw-text-opacity));
 }
 
 .underline {
