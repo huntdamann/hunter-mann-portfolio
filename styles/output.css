@@ -1031,14 +1031,6 @@ video {
   width: 100%;
 }
 
-.w-4 {
-  width: 1rem;
-}
-
-.w-\[1\.5rem\] {
-  width: 1.5rem;
-}
-
 .flex-shrink {
   flex-shrink: 1;
 }
@@ -1097,6 +1089,38 @@ video {
 
 .transform-none {
   transform: none;
+}
+
+@keyframes fadeDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px) scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+.animate-fade {
+  animation: fadeDown 0.5s ease-in;
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(0px) scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(-30pxpx) scale(1);
+  }
+}
+
+.animate-fadetwo {
+  animation: fadeUp 0.5s ease-in;
 }
 
 .touch-auto {
@@ -2894,6 +2918,12 @@ video {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-all {
+  transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
