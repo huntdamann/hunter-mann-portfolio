@@ -661,6 +661,10 @@ video {
   bottom: 0.25rem;
 }
 
+.bottom-\[2rem\] {
+  bottom: 2rem;
+}
+
 .bottom-\[5\%\] {
   bottom: 5%;
 }
@@ -689,8 +693,16 @@ video {
   right: 0.4rem;
 }
 
+.right-\[1rem\] {
+  right: 1rem;
+}
+
 .right-\[5\%\] {
   right: 5%;
+}
+
+.start-1 {
+  inset-inline-start: 0.25rem;
 }
 
 .top-\[0\.4rem\] {
@@ -727,6 +739,10 @@ video {
 
 .z-\[29\] {
   z-index: 29;
+}
+
+.z-\[999\] {
+  z-index: 999;
 }
 
 .float-start {
@@ -777,6 +793,10 @@ video {
   margin: 0px;
 }
 
+.m-1 {
+  margin: 0.25rem;
+}
+
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -789,10 +809,6 @@ video {
 
 .mb-14 {
   margin-bottom: 3.5rem;
-}
-
-.mb-2 {
-  margin-bottom: 0.5rem;
 }
 
 .mb-8 {
@@ -819,6 +835,14 @@ video {
   margin-top: 0.25rem;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.mt-16 {
+  margin-top: 4rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -829,6 +853,10 @@ video {
 
 .mt-3 {
   margin-top: 0.75rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
 }
 
 .mt-5 {
@@ -934,8 +962,20 @@ video {
   display: list-item;
 }
 
+.\!hidden {
+  display: none !important;
+}
+
 .hidden {
   display: none;
+}
+
+.h-1 {
+  height: 0.25rem;
+}
+
+.h-2 {
+  height: 0.5rem;
 }
 
 .h-\[50\%\] {
@@ -961,6 +1001,10 @@ video {
 
 .h-screen {
   height: 100vh;
+}
+
+.w-1 {
+  width: 0.25rem;
 }
 
 .w-10 {
@@ -1091,6 +1135,22 @@ video {
   transform: none;
 }
 
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+}
+
+.animate-bounce {
+  animation: bounce 1s infinite;
+}
+
 @keyframes fadeDown {
   0% {
     opacity: 0;
@@ -1105,6 +1165,27 @@ video {
 
 .animate-fade {
   animation: fadeDown 0.5s ease-in;
+}
+
+@keyframes fadeLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px) scale(0.9);
+  }
+
+  80% {
+    opacity: 1;
+    transform: translateX(10px) scale(1);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+.animate-fadethree {
+  animation: fadeLeft 1s ease-in;
 }
 
 @keyframes fadeUp {
@@ -2095,6 +2176,11 @@ video {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
+.bg-red-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
+}
+
 .bg-slate-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(203 213 225 / var(--tw-bg-opacity));
@@ -2994,6 +3080,10 @@ video {
   forced-color-adjust: none;
 }
 
+.\[a-zA-Z0-9\:\\\\-\\\\\._\$\] {
+  a-z-a--z0-9: \\-\\. $;
+}
+
 .menu {
   position: absolute;
   inset: 0px;
@@ -3008,15 +3098,84 @@ video {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
   opacity: 0;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 75ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
 .show {
   z-index: 999;
+}
+
+@keyframes menuOpen {
+  0% {
+    opacity: 0;
+    transform: translateY(300px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.show {
+  animation: menuOpen 0.5s ease-in;
   opacity: 1;
+}
+
+.h {
+  opacity: 0;
+}
+
+.show-content {
+  opacity: 1;
+}
+
+.first-project {
+  margin-top: 5rem;
+  margin-bottom: 0.5rem;
+}
+
+.project {
+  margin-top: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.line {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.hover\:scale-105:hover {
+  --tw-scale-x: 1.05;
+  --tw-scale-y: 1.05;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:bg-red-900:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(127 29 29 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-white:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-black:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .hover\:font-bold:hover {
   font-weight: 700;
+}
+
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .before\:hover\:text-center:hover::before {

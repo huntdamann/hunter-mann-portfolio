@@ -7,5 +7,8 @@
   "scripts": {
     "dev": "npx tailwindcss -i ./styles/styles.css -o ./styles/output.css --watch",
     "format": "npx prettier --write ."
+  },
+  "dependencies": {
+    "intersection-observer": "^0.12.2"
   }
 }

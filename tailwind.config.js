@@ -14,7 +14,9 @@ module.exports = {
       animation: {
 
         fade: 'fadeDown 0.5s ease-in',
-        fadetwo: 'fadeUp 0.5s ease-in'
+        fadetwo: 'fadeUp 0.5s ease-in',
+        fadethree: 'fadeLeft 1s ease-in',
+        open: 'menuOpen 0.5s ease-in'
       },
       keyframes: {
 
@@ -27,7 +29,18 @@ module.exports = {
           '0%': { opacity: '0', transform: 'translateY(0px) scale(0.9)'},
           '100%': {opacity: '1', transform: 'translateY(-30pxpx) scale(1)'}
 
+        },
+        fadeLeft: {
+          '0%': { opacity: '0', transform: 'translateX(-30px) scale(0.9)'},
+          '80%': {opacity: '1', transform: 'translateX(10px) scale(1)'},
+          '100%': {opacity: '1', transform: 'translateY(0px) scale(1)'}
+
+        },
+        menuOpen: {
+          '0%': { opacity: '0', transform: 'translateY(300px)'},
+          '100%': {opacity: '1', transform: 'translateY(0px)'}
         }
+        
       },
 
 

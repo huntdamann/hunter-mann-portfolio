@@ -23,7 +23,7 @@
 
 
 </head>
-<body class="p-0 m-0 ">
+<body class="p-0 m-0 scroll-smooth ">
     <header class="animate-fade transition-all">
         <nav class="flex items-center justify-between small:p-5">
             <!--Hunter Header-->
@@ -76,7 +76,7 @@
                             <!--Nav Menu Arrow Buttom-->
                             <div class="font-mono pr-4 overflow-hidden" style="opacity: 1; transform: none;">
                                 <a href="/">
-                                    <div class="flex justify-center rounded-full items-center mr-1" style="background: white; width: 40px; height: 40px; font-size: 1.5rem; color: black;">↗
+                                    <div class="flex justify-center hover:bg-black hover:text-white rounded-full items-center mr-1" style="background: white; width: 40px; height: 40px; font-size: 1.5rem; color: black;">↗
                                     
                                     
                                     </div>
@@ -136,7 +136,7 @@
                         </h1>
                             </div>
                     <div class="font-mono pr-4 overflow-hidden" style="opacity: 1; transform: none;">
-                        <a href="/blog">
+                        <a href="#about">
                             <div class="flex justify-center rounded-full items-center mr-1" style="background: black; width: 40px; height: 40px; font-size: 1.5rem; color: white;">↗
                             </div>
                         </a>
@@ -179,13 +179,15 @@
             </nav>
         
 
-    
+    <div class="bg-red-700 fixed z-[999] bottom-[2rem] right-[1rem] animate-bounce">
+        <span>icon</span>
+    </div>
     </header>
     <!--Entire Content-->
     <section>
         <section>
             <!--Hero Section-->
-            <section class="mt-3 animate-fadetwo p-1 small:gap-1 border-[0px]">
+            <section id="section-1" class="mt-3 animate-fadetwo p-1 small:gap-1 border-[0px]">
                 <!--Hero Container-->
                 <div>
 
@@ -224,7 +226,7 @@
                     <div class="border flex bg-black items-center p-10 w-full h-full overflow-y-hidden overflow-x-hidden">
                         <div class="border-[5px]">
 
-                            <img src="./src/Background.png" alt="">
+                            <img src="./src/MOSHED-2024-6-8-9-27-11.gif" alt="">
 
                         </div>
                         
@@ -241,7 +243,7 @@
             </section>
 
             <!--What I Offer-->
-            <section class="mt-3 p-3">
+            <section id="about" class="mt-10 animate-fadetwo transition-all p-3">
                 <div class="h-[85vh] flex-col bg-slate-300 overflow-hidden rounded-lg relative flex items-center justify-center">
                     <img class="hidden" width="100" src="./src/android-chrome-512x512.png" alt="">
                     <div class="w-[80%] h-full flex flex-col items-center">
@@ -270,7 +272,7 @@
                 </div>
             </section>
             <!--Projects and Blogs-->
-            <section class="p-2 font-engineer">
+            <section class="p-2 mt-16 font-engineer">
                 <div class="w-full mb-8">
                 <div class="w-full flex p-0 py-1">
                     <div class="font-mono font-thin text-[0.3rem] small:text-[0.5rem]" style="writing-mode: vertical-lr;">
@@ -337,9 +339,9 @@
                             </div>
 
                         <!--Projects Section-->
-                        <div class="w-full">
+                        <div class="mt-4 w-full">
                                 <!--Individual Project-->
-                                <div class="mt-20 mb-2">
+                                <div class="first-project h">
                                     <div class="flex items-center justify-between">
                                         <div class="flex flex-col gap-1" style="opacity: 1; transform: none;">
                                             <div class="flex items-center">
@@ -352,8 +354,8 @@
                                             </div>
                                             <div class="flex gap-1" style="transform: none;">
                                                 
-                                                <div style="transform: none;">
-                                                    <div class="flex justify-center rounded-lg items-center mr-1" style="background: rgb(79, 121, 66); width: 1.5rem; height: 1.5rem; font-size: 0.9rem; color: white;">
+                                                <div class="animate-fadethree transition-all" style="transform: none;">
+                                                    <div class="flex justify-center rounded-lg items-center mr-1" style="background: rgb(79, 121, 66); width: 1.5rem; height: 1.5rem; font-size: 0.9rem; color: white; animation-delay: 2s;">
                                                         F
                                                     </div>
                                                 </div>
@@ -361,9 +363,9 @@
                                     </div>
                                 </div>
                                 </div>
-                                <hr class="my-4">
+                                <hr class="line h">
                                  <!--Individual Project-->
-                                 <div class="mt-3 mb-2">
+                                 <div class="project h">
                                     <div class="flex items-center justify-between">
                                         <div class="flex flex-col gap-1" style="opacity: 1; transform: none;">
                                             <div class="flex items-center">
@@ -385,9 +387,9 @@
                                     </div>
                                 </div>
                                 </div>
-                                <hr class="my-4">
+                                <hr class="line h">
                                  <!--Individual Project-->
-                                 <div class=" mt-3 mb-2">
+                                 <div class="project h">
                                     <div class="flex items-center justify-between">
                                         <div class="flex flex-col gap-1" style="opacity: 1; transform: none;">
                                             <div class="flex items-center">
@@ -409,9 +411,9 @@
                                     </div>
                                 </div>
                                 </div>
-                                <hr class="my-4">
+                                <hr class="line h">
                                  <!--Individual Project-->
-                                 <div class=" mt-3 mb-2">
+                                 <div class="project h">
                                     <div class="flex items-center justify-between">
                                         <div class="flex flex-col gap-1" style="opacity: 1; transform: none;">
                                             <div class="flex items-center">
@@ -433,7 +435,7 @@
                                     </div>
                                 </div>
                                 </div>
-                                <hr class="my-4">
+                                <hr class="line h">
 
                         </div>
                     </div>
@@ -453,7 +455,7 @@
             
             <div class="h-full object-cover w-full text-white bg-[white]  flex flex-wrap flex-col items-center p-9">
                 
-                    <div class="flex bg-[#00171F] flex-col h-[6rem] w-[6rem] p-8 gap-7 justify-center items-center rounded-full text-2xl border">
+                    <div class="flex hover:bg-red-900 transition-all bg-[#00171F] flex-col h-[6rem] w-[6rem] p-8 gap-7 justify-center items-center rounded-full text-2xl border">
 
                         <i style="color: skyblue; margin-top: 12px;" class="fa-brands fa-2xl fa-react"></i>
                         <span class="text-sm">ReactJS</span>
@@ -774,6 +776,7 @@
 
         </section>
     </section>
-    <script src="./src/js/main.js"></script>
+    <script src="./src/js/main.js" defer></script>
+    <script src="./src/js/observer.js" defer></script>
 </body>
 </html>
