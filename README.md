@@ -16,9 +16,9 @@
 | Adding transition to elements     | In Progress | 
 | Build Section      | Not Started      |
 | Skills  | In Progress      |
-| Add QR Code | Not Started      |
-| Add QR Code | Not Started      |
-| Add QR Code | Not Started      |
+| Animations | Not Started      |
+| Education and Schooling | Not Started      |
+| Finishing adding more books  | Not Started      |
 | Add QR Code | Not Started      |
 
 ## Tablet Design (Not started)
