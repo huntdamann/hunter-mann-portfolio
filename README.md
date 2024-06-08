@@ -16,7 +16,7 @@
 | Adding transition to elements     | In Progress | 
 | Build Section      | Not Started      |
 | Skills  | Done     |
-| Animations | Not Started      |
+| Animations | In progress      |
 | Education and Schooling | In Progress      |
 | Finishing adding more books  | Not Started      |
 | Add QR Code | Not Started      |
