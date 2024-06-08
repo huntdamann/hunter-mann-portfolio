@@ -15,7 +15,7 @@
 | ------------- |:-------------:|
 | Adding transition to elements     | In Progress | 
 | Build Section      | Not Started      |
-| Skills  | In Progress      |
+| Skills  | Done     |
 | Animations | Not Started      |
 | Education and Schooling | In Progress      |
 | Finishing adding more books  | Not Started      |
