@@ -45,176 +45,184 @@
             style="height: 0vh"
           ></div>
         </div>
-        <section style="display: block">
-          <header class="">
-            <nav class="flex items-center justify-between small:p-5">
-                <!--Hunter Header-->
-                <div class="z-[29]" style="opacity: 1; transform: none;">
-                    <h1 class="mr-auto leading-4 tracking-tighter p-4">
-                        <a class="hover:text-primary ease-in-out duration-300" href="/">
-                            <h1 class="text-[1.75rem]">
-                                <span class="inline-block" style="opacity: 1; transform: none;">h</span>
-                                <span class="inline-block" style="opacity: 1; transform: none;">u</span>
-                                <span class="inline-block" style="opacity: 1; transform: none;">n</span>
-                                <span class="inline-block" style="opacity: 1; transform: none;">t</span>
-                                <span class="inline-block" style="opacity: 1; transform: none;">e</span>
-                                <span class="inline-block" style="opacity: 1; transform: none;">r</span>
-                                <span class="inline-block" style="color: rgb(29, 32, 221); margin-left: 0.15rem; opacity: 1; transform: none;">.</span>
-                            </h1>
-                        </a>
-                    </h1>
-                </div>
-                <div id="burger-handle" onclick="burgerClick()" class="text-red-800">
-                    <i class="fa-solid fa-xl fa-bars-staggered"></i>
-                </div>
-                <nav id="menu-handle" class="menu" style="transform: translateY(0%) translateZ(0px);">
-                    <div class="flex flex-col justify-center items-center h-full font-rubik text-[1.5rem] gap-2">
-                        <div class="overflow-hidden text-center h-full pt-16 flex flex-col items-center justify-start">
-                            
-                            <div id="door-handle" onclick="doorClick()" class="absolute z-50 text-black top-[3rem] left-[17rem]">
-                                <i class="fa-solid fa-door-open"></i>
-                            </div>
-                            
-                            <div class="w-[100vw]">
-                                <hr class="bg-black opacity-50">
-                            </div>
-                            <div class="w-full flex items-center justify-between overflow-hidden" style="color: white; background: black;">
-                                <div class="flex">
-                                    <div class="p-2">
-                                        <p class="font-mono font-thin text-[0.5rem]">
-                                            [1]
-                                        </p>
-                                    </div>
-                                    <h1 class="text-[18vw] uppercase overflow-hidden pl-4 pr-3">
-                                        <div>
-                                            <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">h</span>
-                                            <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">o</span>
-                                            <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">m</span>
-                                            <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">e</span>
-                                        </div>
-                                    </h1>
-                        
-                                </div>
-                                <!--Nav Menu Arrow Buttom-->
-                                <div class="font-mono pr-4 overflow-hidden" style="opacity: 1; transform: none;">
-                                    <a class="border" href="/">
-                                        <div class="flex justify-center hover:bg-white rounded-full items-center mr-1" style="background: white; width: 40px; height: 40px; font-size: 5rem; color: black;">
-                                          ↗
+        <header class="animate-fade transition-all">
+          <nav id="navbar" class="n">
+              <!--Hunter Header-->
+              <div class="z-[29]" style="opacity: 1; transform: none;">
+                  <h1 class="mr-auto leading-4 tracking-tighter p-4">
+                      <a class="hover:text-primary ease-in-out duration-300" href="/">
+                          <h1 class="text-[1.75rem]">
+                              <span class="inline-block" style="opacity: 1; transform: none;">h</span>
+                              <span class="inline-block" style="opacity: 1; transform: none;">u</span>
+                              <span class="inline-block" style="opacity: 1; transform: none;">n</span>
+                              <span class="inline-block" style="opacity: 1; transform: none;">t</span>
+                              <span class="inline-block" style="opacity: 1; transform: none;">e</span>
+                              <span class="inline-block" style="opacity: 1; transform: none;">r</span>
+                              <span class="inline-block" style="color: rgb(29, 32, 221); margin-left: 0.15rem; opacity: 1; transform: none;">.</span>
+                          </h1>
+                      </a>
+                  </h1>
+              </div>
+              <div id="burger-handle" onclick="burgerClick()" class="text-red-800 ml-[10rem]">
+                  <i class="fa-solid fa-xl fa-bars-staggered"></i>
+              </div>
+              <nav id="menu-handle" class="menu" style="transform: translateY(0%) translateZ(0px);">
+                  <div class="flex flex-col justify-center items-center h-full font-rubik text-[1.5rem] gap-2">
+                      <div class="overflow-hidden text-center h-full pt-16 flex flex-col items-center justify-start">
+                          
+                          <div id="door-handle" onclick="doorClick()" class="absolute z-50 text-black top-[3rem] left-[21rem]">
+                              <i class="fa-solid fa-door-open"></i>
+                          </div>
+                          
+                          <div class="w-[100vw]">
+                              <hr class="bg-black opacity-50">
+                          </div>
+                          <div class="w-full flex items-center justify-between overflow-hidden" style="color: white; background: black;">
+                              <div class="flex">
+                                  <div class="p-2">
+                                      <p class="font-mono font-thin text-[0.5rem]">
+                                          [1]
+                                      </p>
+                                  </div>
+                                  <h1 class="text-[18vw] uppercase overflow-hidden pl-4 pr-3">
+                                      <div>
+                                          <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">h</span>
+                                          <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">o</span>
+                                          <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">m</span>
+                                          <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">e</span>
+                                      </div>
+                                  </h1>
+                      
+                              </div>
+                              <!--Nav Menu Arrow Buttom-->
+                              <div class="font-mono pr-4 overflow-hidden" style="opacity: 1; transform: none;">
+                                  <a href="/">
+                                      <div class="flex justify-center hover:bg-black hover:text-white rounded-full items-center mr-1" style="background: white; width: 40px; height: 40px; font-size: 1.5rem; color: black;">↗
                                       
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="w-[100vw]">
-                                <hr class="bg-black opacity-50">
-                            </div>
-    
-                            <!-- Nav Blog Link-->
-                            <div class="w-full flex items-center justify-between  overflow-hidden">
-                                <div class="flex">
-                                    <div class="p-2">
-                                        <p class="font-mono font-thin text-[0.5rem]">
-                                            [2]
-                                        </p>
-                                    </div>
-                            <h1 class="text-[18vw] uppercase overflow-hidden pl-3">
-                                <div>
-                                    <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">b</span>
-                                    <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">l</span>
-                                    <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">o</span>
-                                    <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">g</span>
-                                </div>
-                            </h1>
-                                </div>
-                        <div class="font-mono pr-4 overflow-hidden" style="opacity: 1; transform: none;">
-                            <a href="https://huntdamann.github.io/">
-                                <div class="flex justify-center rounded-full items-center mr-1" style="background: black; width: 40px; height: 40px; font-size: 1.5rem; color: white;">↗
-                                </div>
-                            </a>
-                        </div>
-                            </div>
-    
-                            <div class="w-[100vw]">
-                                <hr class="bg-black opacity-50">
-                            </div>
-    
-                            <!-- About Link-->
-                            <!-- About Link-->
-                            <div class="w-full flex items-center justify-between overflow-hidden">
-                                <div class="flex">
-                                    <div class="p-2">
-                                        <p class="font-mono font-thin text-[0.5rem]">
-                                            [3]
-                                        </p>
-                                    </div>
-                            <h1 class="text-[18vw] uppercase overflow-hidden pl-2 pr-3">
-                                <div class="flex gap-[0.5rem]">
-                                    <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">a</span>
-                                    <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">b</span>
-                                    <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">o</span>
-                                    <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">u</span>
-                                    <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">t</span>
-                                </div>
-                            </h1>
-                                </div>
-                        <div class="font-mono pr-4 overflow-hidden" style="opacity: 1; transform: none;">
-                            <a href="/blog">
-                                <div class="flex justify-center rounded-full items-center mr-1" style="background: black; width: 40px; height: 40px; font-size: 1.5rem; color: white;">↗
-                                </div>
-                            </a>
-                        </div>
-                            </div>
-    
-                            <!--Line-->
-                            <div class="w-[100vw]">
-                                <hr class="bg-black opacity-50">
-                            </div>
-    
-                            <!-- Books Nav Link-->
-                            <div class="w-full flex items-center justify-between overflow-hidden">
-                                <div class="flex">
-                                    <div class="p-2">
-                                        <p class="font-mono font-thin text-[0.5rem]">
-                                            [4]
-                                        </p>
-                                    </div>
-                                    <h1 class="text-[18vw] uppercase overflow-hidden pl-2 pr-2">
-                                        <div class="flex gap-[0.5rem]">
-                                            <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">b</span>
-                                            <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">o</span>
-                                            <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">o</span>
-                                            <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">k</span>
-                                            <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">s</span>
-                                        </div>
-                                    </h1>
-                                </div>
-                            <div class="font-mono pr-4 overflow-hidden" style="opacity: 1; transform: none;">
-                                <a href="./books.html">
-                                    <div class="flex justify-center rounded-full items-center mr-1" style="background: black; width: 40px; height: 40px; font-size: 1.5rem; color: white;">↗
-                                    </div>
-                                </a>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                  
-                </nav>
-            
-    
+                                      
+                                      </div>
+                                  </a>
+                              </div>
+                          </div>
+                          <div class="w-[100vw]">
+                              <hr class="bg-black opacity-50">
+                          </div>
+  
+                          <!-- Nav Blog Link-->
+                          <div class="w-full flex items-center justify-between  overflow-hidden">
+                              <div class="flex">
+                                  <div class="p-2">
+                                      <p class="font-mono font-thin text-[0.5rem]">
+                                          [2]
+                                      </p>
+                                  </div>
+                          <h1 class="text-[18vw] uppercase overflow-hidden pl-3">
+                              <div>
+                                  <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">b</span>
+                                  <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">l</span>
+                                  <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">o</span>
+                                  <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">g</span>
+                              </div>
+                          </h1>
+                              </div>
+                      <div class="font-mono pr-4 overflow-hidden" style="opacity: 1; transform: none;">
+                          <a href="https://huntdamann.github.io/">
+                              <div class="flex justify-center rounded-full items-center mr-1" style="background: black; width: 40px; height: 40px; font-size: 1.5rem; color: white;">↗
+                              </div>
+                          </a>
+                      </div>
+                          </div>
+  
+                          <div class="w-[100vw]">
+                              <hr class="bg-black opacity-50">
+                          </div>
+  
+                          <!-- About Link-->
+                          <!-- About Link-->
+                          <div class="w-full flex items-center justify-between overflow-hidden">
+                              <div class="flex">
+                                  <div class="p-2">
+                                      <p class="font-mono font-thin text-[0.5rem]">
+                                          [3]
+                                      </p>
+                                  </div>
+                          <h1 class="text-[18vw] uppercase overflow-hidden pl-2 pr-3">
+                              <div class="flex gap-[0.5rem]">
+                                  <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">a</span>
+                                  <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">b</span>
+                                  <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">o</span>
+                                  <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">u</span>
+                                  <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">t</span>
+                              </div>
+                          </h1>
+                              </div>
+                      <div class="font-mono pr-4 overflow-hidden" style="opacity: 1; transform: none;">
+                          <a href="#about">
+                              <div class="flex justify-center rounded-full items-center mr-1" style="background: black; width: 40px; height: 40px; font-size: 1.5rem; color: white;">↗
+                              </div>
+                          </a>
+                      </div>
+                          </div>
+  
+                          <!--Line-->
+                          <div class="w-[100vw]">
+                              <hr class="bg-black opacity-50">
+                          </div>
+  
+                          <!-- Books Nav Link-->
+                          <div class="w-full flex items-center justify-between overflow-hidden">
+                              <div class="flex">
+                                  <div class="p-2">
+                                      <p class="font-mono font-thin text-[0.5rem]">
+                                          [4]
+                                      </p>
+                                  </div>
+                                  <h1 class="text-[18vw] uppercase overflow-hidden pl-2 pr-2">
+                                      <div class="flex gap-[0.5rem]">
+                                          <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">b</span>
+                                          <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">o</span>
+                                          <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">o</span>
+                                          <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">k</span>
+                                          <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">s</span>
+                                      </div>
+                                  </h1>
+                              </div>
+                          <div class="font-mono pr-4 overflow-hidden" style="opacity: 1; transform: none;">
+                              <a href="./books.html">
+                                  <div class="flex justify-center rounded-full items-center mr-1" style="background: black; width: 40px; height: 40px; font-size: 1.5rem; color: white;">↗
+                                  </div>
+                              </a>
+                          </div>
+                          </div>
+                      </div>
+                  </div>
+                
+              </nav>
+          
+  
+      <a href="#foot">
+  
+          <div id="arrowDown" onclick="scrollDown()" class="fixed z-[999] bottom-[2rem] text-red-600  right-[1rem] animate-bounce delay[5]">
         
-        </header>
+              <i class="fa-solid fa-xl fa-circle-arrow-down"></i>
+          </div>
+      </a>
+     
+      </header>
+        <section style="display: block">
+          
           <div class="flex flex-col items-center justify-center mb-14">
             <div>
               <div
-                class="border bg-[red] w-[15rem] overflow-hidden object-cover border-black p-2 small:p-2"
+                class="border bg-[#8B0000] w-[15rem] overflow-hidden object-cover border-black p-2 small:p-2"
               >
                 <div class="w-10">
                   <pre
-                    class="flex border object-fit items-center w-full justify-center text-[0.6rem] font-[200] my-4 small:text-[0.75rem]"
+                    class="flex object-fit items-center w-full justify-center text-[0.6rem] font-[200] my-4 small:text-[0.75rem]"
                   >
                       
-                                            .--.           .---.        .-.
-                                        .---|--|   .-.     | W |  .---. |~|    .--.
+                                            .--.              .---.        .-.
+                                        .---|--|   .-.        | W |  .---. |~|    .--.
                                         .--|===|  |---|_|--.__| R |--|:::| |~|-==-|==|---.
                                         |%%|NT2|  |===| |~~|%%| I |--|   |_|~|WORD|  |___|-.
                                         |  |   |  |===| |==|  | T |  |:::|=| |    |GB|---|=|
@@ -438,10 +446,184 @@
                   </a>
                 </div>
               </article>
+              <article class="border border-black relative">
+                <div
+                  class="w-full h-full flex items-center justify-center p-10 sm:p-14"
+                >
+                  <div
+                    class="pr-10 absolute left-[5%] top-[5%] font-mono text-[0.5rem] sm:text-[0.6rem] uppercase"
+                  >
+                    <div>
+                      <span>The Metaverse Handbook</span>
+                    </div>
+                  </div>
+                  <div
+                    class="absolute font-mono font-thin text-[0.5rem] sm:text-[0.6rem] top-[5%] right-[5%]"
+                  >
+                    <span>[9]</span>
+                  </div>
+                  <div
+                    class="absolute bottom-[5%] left-[5%] font-mono font-thin text-[0.5rem] sm:text-[0.6rem]"
+                  >
+                    <span>###</span>
+                  </div>
+                  <a
+                    class="my-2"
+                    href="/books/a-heartbreaking-work-of-staggering-genius"
+                  >
+                    <img
+                      src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1536184191l/41721428._SY75_.jpg"
+                      alt="book"
+                      class="w-[150px] ease-in duration-300"
+                      style="filter: blur(0px)"
+                    />
+                  </a>
+                </div>
+              </article>
+              <article class="border border-black relative">
+                <div
+                  class="w-full h-full flex items-center justify-center p-10 sm:p-14"
+                >
+                  <div
+                    class="pr-10 absolute left-[5%] top-[5%] font-mono text-[0.5rem] sm:text-[0.6rem] uppercase"
+                  >
+                    <div>
+                      <span>The Metaverse Handbook</span>
+                    </div>
+                  </div>
+                  <div
+                    class="absolute font-mono font-thin text-[0.5rem] sm:text-[0.6rem] top-[5%] right-[5%]"
+                  >
+                    <span>[9]</span>
+                  </div>
+                  <div
+                    class="absolute bottom-[5%] left-[5%] font-mono font-thin text-[0.5rem] sm:text-[0.6rem]"
+                  >
+                    <span>###</span>
+                  </div>
+                  <a
+                    class="my-2"
+                    href="/books/a-heartbreaking-work-of-staggering-genius"
+                  >
+                    <img
+                      src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1437557431l/181206._SY75_.jpg"
+                      alt="book"
+                      class="w-[150px] ease-in duration-300"
+                      style="filter: blur(0px)"
+                    />
+                  </a>
+                </div>
+              </article>
+              <article class="border border-black relative">
+                <div
+                  class="w-full h-full flex items-center justify-center p-10 sm:p-14"
+                >
+                  <div
+                    class="pr-10 absolute left-[5%] top-[5%] font-mono text-[0.5rem] sm:text-[0.6rem] uppercase"
+                  >
+                    <div>
+                      <span>The Metaverse Handbook</span>
+                    </div>
+                  </div>
+                  <div
+                    class="absolute font-mono font-thin text-[0.5rem] sm:text-[0.6rem] top-[5%] right-[5%]"
+                  >
+                    <span>[9]</span>
+                  </div>
+                  <div
+                    class="absolute bottom-[5%] left-[5%] font-mono font-thin text-[0.5rem] sm:text-[0.6rem]"
+                  >
+                    <span>###</span>
+                  </div>
+                  <a
+                    class="my-2"
+                    href="/books/a-heartbreaking-work-of-staggering-genius"
+                  >
+                    <img
+                      src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1465761302l/28257707._SX50_.jpg"
+                      alt="book"
+                      class="w-[150px] ease-in duration-300"
+                      style="filter: blur(0px)"
+                    />
+                  </a>
+                </div>
+              </article>
+              <article class="border border-black relative">
+                <div
+                  class="w-full h-full flex items-center justify-center p-10 sm:p-14"
+                >
+                  <div
+                    class="pr-10 absolute left-[5%] top-[5%] font-mono text-[0.5rem] sm:text-[0.6rem] uppercase"
+                  >
+                    <div>
+                      <span>The Metaverse Handbook</span>
+                    </div>
+                  </div>
+                  <div
+                    class="absolute font-mono font-thin text-[0.5rem] sm:text-[0.6rem] top-[5%] right-[5%]"
+                  >
+                    <span>[9]</span>
+                  </div>
+                  <div
+                    class="absolute bottom-[5%] left-[5%] font-mono font-thin text-[0.5rem] sm:text-[0.6rem]"
+                  >
+                    <span>###</span>
+                  </div>
+                  <a
+                    class="my-2"
+                    href="/books/a-heartbreaking-work-of-staggering-genius"
+                  >
+                    <img
+                      src="https://i.ebayimg.com/images/g/2xMAAOSwjzhk0~On/s-l1600.jpg"
+                      alt="book"
+                      class="w-[150px] ease-in duration-300"
+                      style="filter: blur(0px)"
+                    />
+                  </a>
+                </div>
+              </article>
             </section>
           </main>
+
         </section>
       </main>
+       <!--Footer for each page-->
+       <footer id="foot" class="bg-[#8B0000] text-white mt-20 flex flex-col items-center text-lg sm:justify-between p-5 sm:p-12">
+        <div class="w-full flex justify-between items-end">
+            <div class="w-full">
+                <p class="font-sans lowercase text-[9vw] sm:text-[3.5vw] leading-none">contact me.
+
+                </p>
+            </div>
+            <div class="flex flex-col items-center">
+                [remember to add here]
+            </div>
+        </div>
+        <hr class="w-full my-4 sm:my-6">
+        <div class="w-full flex justify-between font-mono font-thin text-[0.45rem] sm:text-[0.6rem]">
+            <div class="flex flex-col small:gap-[0.25rem] justify-between uppercase">
+                <a target="" href="https://www.linkedin.com/in/hunter-mann-140178127/">linkedin →</a>
+                <a target="" href="https://twitter.com/huntdatechguy">x →</a>
+                <a target="" href="https://github.com/huntdamann">github →</a>
+                <a target="" href="https://www.goodreads.com/user/show/177529798-hunter">GoodReads →</a>
+                <a target="" href="mailto:hunter.mann24@gmail.com">hunter.mann24@gmail.com →</a>
+                <a target="" href="mailto:leeman.hunt24@gmail.com">leeman.hunt24@gmail.com →</a>
+            </div>
+            <div class="flex flex-col gap-1 items-end">
+                <p>
+                    <span class="font-mono mr-1 text-[0.7rem] ">© 2024</span>
+                    <span class="font-sans text-[0.85rem]">Hunter Mann</span>
+                </p>
+                <div class="flex flex-col gap-1 uppercase text-right text-[0.45rem] sm:text-[0.6rem]">
+                    <p>designed and developed by hunter mann.</p>
+                    <p>inspired by kostya farber.</p>
+                    <p>"life's a game, but if you become a creator of game, doors will open..." </p>
+                </div>
+            </div>
+        </div>
+    </footer>
     </div>
+    <script src="./src/js/main.js"></script>
+    <script src="./src/js/observer.js"></script>
   </body>
 </html>

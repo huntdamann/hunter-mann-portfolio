@@ -1,15 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./**/*.{html,js}", "./src/**/*.{html,js}"],
+  content: ["./**/*.{html,js}", "./src/**/*.{html,js}", "./src/observer.js"],
   theme: {
-    screens: {
-      mobile: "375px",
-
-      "mobile-2": "414px",
-      samsung: "412px",
-      small: "320px",
-    },
+   
     extend: {
+      screens: {
+        mobile: "375px",
+  
+        "mobile-2": "414px",
+        samsung: "412px",
+        small: "320px",
+      },
 
       animation: {
 

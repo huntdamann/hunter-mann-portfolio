@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .menu {
-  @apply flex flex-col  inset-0 transition-all ease-in duration-75 absolute bg-white text-black gap-5 border-[5px] opacity-0 -z-[5] p-16;
+  @apply flex flex-col  inset-0 transition-all ease-in duration-75 absolute bg-white text-black gap-5  opacity-0 -z-[5] p-16;
 }
 
 .show {
@@ -11,10 +11,10 @@
 }
 
 .h {
-  @apply opacity-0;
+  @apply opacity-100;
 }
 .show-content {
-  @apply opacity-100;
+  @apply flex;
 }
 
 .first-project {
@@ -27,4 +27,15 @@
 
 .line {
   @apply my-4;
+}
+
+.n {
+  @apply flex items-center justify-between lg:bg-red-300  small:p-5;
+}
+
+.pop {
+  @apply opacity-100;
+}
+.skill-container {
+  @apply hover:bg-red-900 flex transition-all bg-[#00171F] shadow-xl flex-col h-[6rem] w-[6rem] p-8 gap-7 justify-center items-center rounded-full text-2xl border;
 }
