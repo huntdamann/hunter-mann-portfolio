@@ -17,8 +17,8 @@
 | Build Section      | Not Started      |
 | Skills  | Done     |
 | Animations | In progress      |
-| Education and Schooling | In Progress      |
-| Finishing adding more books  | Not Started      |
+| Education and Schooling | Done      |
+| Finishing adding more books  | Done      |
 | Add QR Code | Not Started      |
 
 ## Tablet Design (Not started)
