@@ -1,36 +1,36 @@
-
-
-const sectionOne = document.querySelector('#section-1');
-const hiddenElements = document.querySelectorAll('.h');
-const skill = document.querySelectorAll('#skill')
-const section = document.querySelector("#section");
+const workSection = document.getElementById('worksection')
+const picture = document.getElementById('pic-container')
 const options = {
+    root: null,
+    rootMargin: "5px",
+    threshold: 1,
+};
+const observer = new IntersectionObserver(intersectionCallback, options);
 
-    rootMargin: "0px",
-    threshold: 1 
+console.log(workSection);
+observer.observe(workSection);
+    
+
+
+function intersectionCallback(entries) {
+   
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            console.log("Education section is shown");
+            picture.classList.add('showPicture')
+        }
+        else {
+            console.log("I am currently not in the viewport");
+            picture.classList.remove('showPicture')
+        }
+    })
 }
 
 
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-
-        if (entry.isIntersecting) {
-
-        console.log("section 1");
-
-       
-        }
-
-    })
-}, {
-
-    threshold: 0.8,
-    delay:200,
-    rootMargin:"0px",
-});
 
 
-observer.observe(section);
+
+
 
 
 

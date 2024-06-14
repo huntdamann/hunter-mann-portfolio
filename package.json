@@ -9,6 +9,8 @@
     "format": "npx prettier --write ."
   },
   "dependencies": {
-    "intersection-observer": "^0.12.2"
+    "intersection-observer": "^0.12.2",
+    "tailwindcss-animate": "^1.0.7",
+    "tailwindcss-animation-delay": "^1.2.0"
   }
 }

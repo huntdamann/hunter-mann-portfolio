@@ -10,6 +10,11 @@ console.log(
 const burgerIcon = document.getElementById("burger-handle");
 const menu = document.getElementById("menu-handle");
 const doorIcon = document.getElementById("door-handle");
+const menuOptions = document.querySelectorAll("#menu-option");
+const menuButtons = document.querySelectorAll("#menu-button");
+
+console.log(menuOptions);
+console.log(burgerIcon);
 
 let prevScrollPos = window.scrollY;
 
@@ -19,6 +24,18 @@ let show = 0;
 function burgerClick() {
   if (show == 0) {
     menu.classList.toggle('show'); 
+    menuOptions.forEach(entry => {
+
+      console.log("Animating")
+      entry.classList.add('showText');
+      
+    })
+    menuButtons.forEach(entry => {
+
+     
+      entry.classList.add('showButton');
+      
+    })
     
     console.log('Show Menu');
     show = 1;
@@ -28,6 +45,19 @@ function doorClick() {
     if (show==1) {
         menu.classList.toggle('show');
         console.log('Close Menu')
+        menuOptions.forEach(entry => {
+
+          
+          entry.classList.remove('showText');
+
+        })
+
+        menuButtons.forEach(entry => {
+
+     
+          entry.classList.remove('showButton');
+          
+        })
         show = 0;
     }
 }
@@ -35,22 +65,6 @@ function doorClick() {
 
 burgerIcon.addEventListener('click', burgerClick);
 doorIcon.addEventListener('click', doorClick);
-window.addEventListener('scroll', function() {
-
-  const currentScrollPos = window.scrollY;
-  console.log(currentScrollPos);
-  if (prevScrollPos > currentScrollPos) {
-
-    //user has scrolled up
-    document.querySelector('#navbar').classList.toggle('pop');
-
-  } else {
-
-    //user has scrolled down 
-    document.querySelector('#navbar').classList.toggle('pop');
-  }
-
-  prevScrollPos = currentScrollPos;
 
 
-})
+  

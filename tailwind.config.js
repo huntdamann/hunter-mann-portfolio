@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./**/*.{html,js}", "./src/**/*.{html,js}", "./src/observer.js"],
+  content: ["./**/*.{html,js}", "./src/**/*.{html,js}", "./src/observer.js", "./src/main.js", ],
   theme: {
    
     extend: {
@@ -17,7 +17,11 @@ module.exports = {
         fade: 'fadeDown 0.5s ease-in',
         fadetwo: 'fadeUp 0.5s ease-in',
         fadethree: 'fadeLeft 1s ease-in',
-        open: 'menuOpen 0.5s ease-in'
+        fademenu: 'fadeMenu 0.5s ease-in',
+        fadebutton: 'fadeMenuButton 0.5s ease-in',
+        open: 'menuOpen 0.5s ease-in',
+        skill: 'fadeIn 0.5s',
+        picture: 'animatePicture 2s linear'
       },
       keyframes: {
 
@@ -28,7 +32,7 @@ module.exports = {
         },
         fadeUp: {
           '0%': { opacity: '0', transform: 'translateY(0px) scale(0.9)'},
-          '100%': {opacity: '1', transform: 'translateY(-30pxpx) scale(1)'}
+          '100%': {opacity: '1', transform: 'translateY(-30px) scale(1)'}
 
         },
         fadeLeft: {
@@ -38,9 +42,25 @@ module.exports = {
 
         },
         menuOpen: {
-          '0%': { opacity: '0', transform: 'translateY(300px)'},
-          '100%': {opacity: '1', transform: 'translateY(0px)'}
-        }
+          '0%': { opacity: '0', transform: 'translateX(300px)'},
+          '100%': {opacity: '1', transform: 'translateX(0px)'}
+        },
+        fadeIn: {
+          '0%': { opacity: '0', transform: 'translateY(-40px) '},
+          '100%': {opacity: '1', transform: 'translateY(0px) '}
+        },
+        fadeMenu: {
+          '0%': { opacity: '0', transform: 'translateX(-50px) '},
+          '100%': {opacity: '1', transform: 'translateX(0px) '}
+        },
+        fadeMenuButton: {
+          '0%': { opacity: '0', transform: 'translateX(50px) '},
+          '100%': {opacity: '1', transform: 'translateX(0px) '}
+        },
+        animatePicture: {
+          '0%': { opacity: '0', transform: 'scale(0)'},
+          '100%': {opacity: '1', transform: 'scale(1)'}
+        },
         
       },
 
@@ -59,5 +79,9 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require("tailwindcss-animation-delay"),
+    require("tailwindcss-animate"),
+    
+  ],
 };

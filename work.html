@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/output.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+</head>
+<body class="">
+    <header class="animate-fade transition-all">
+        <nav id="navbar" class="n">
+            <!--Hunter Header-->
+            <div class="z-[29]" style="opacity: 1; transform: none;">
+                <h1 class="mr-auto leading-4 tracking-tighter p-4">
+                    <a class="hover:text-primary ease-in-out duration-300" href="/">
+                        <h1 class="text-[1.75rem] flex">
+                            <span class="inline-block" style="opacity: 1; transform: none;">h</span>
+                            <span class="inline-block" style="opacity: 1; transform: none;">u</span>
+                            <span class="inline-block" style="opacity: 1; transform: none;">n</span>
+                            <span class="inline-block" style="opacity: 1; transform: none;">t</span>
+                            <span class="inline-block" style="opacity: 1; transform: none;">e</span>
+                            <span class="inline-block" style="opacity: 1; transform: none;">r</span>
+                            <span class="inline-block" style="color: rgb(29, 32, 221); margin-left: 0.15rem; opacity: 1; transform: none;">.</span>
+                        </h1>
+                    </a>
+                </h1>
+            </div>
+            <div id="burger-handle" onclick="burgerClick()" class="text-red-800 lg:opacity-0 ml-[10rem]">
+                <i class="fa-solid fa-xl fa-bars-staggered"></i>
+            </div>
+            <div class="small:opacity-0 lg:opacity-100">
+                <span class="lg:text-3xl">
+                    Website is currently designed for MOBILE ONLY
+                </span>
+            </div>
+            <nav class="flex border ml-[50rem] xl:ml=[50rem]">
+                <ul class="flex gap-3 justify-evenly">
+                    
+                    <li>Home</li>
+                    <li>About</li>
+                    <li> Blog</li>
+                    <li>Books</li>
+                </ul>
+            </nav>
+            <nav id="menu-handle" class="menu" style="transform: translateY(0%) translateZ(0px);">
+                <div class="flex flex-col justify-center items-center h-full font-rubik text-[1.5rem] gap-2">
+                    <div class="overflow-hidden text-center h-full pt-16 flex flex-col items-center justify-start">
+                        
+                        <div id="door-handle" onclick="doorClick()" class="absolute z-50 text-black top-[3rem] left-[21rem]">
+                            <i class="fa-solid fa-door-open"></i>
+                        </div>
+                        
+                        <div class="w-[100vw]">
+                            <hr class="bg-black opacity-50">
+                        </div>
+                        <div class="w-full flex items-center justify-between overflow-hidden" style="color: white; background: black;">
+                            <div class="flex">
+                                <div class="p-2">
+                                    <p class="font-mono font-thin text-[0.5rem]">
+                                        [1]
+                                    </p>
+                                </div>
+                                <h1 id="menu-option" class="text-[18vw] uppercase overflow-hidden pl-4 pr-3">
+                                    <div>
+                                        <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">h</span>
+                                        <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">o</span>
+                                        <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">m</span>
+                                        <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">e</span>
+                                    </div>
+                                </h1>
+                    
+                            </div>
+                            <!--Nav Menu Arrow Buttom-->
+                            <div id="menu-button" class="menub" style="opacity: 1; transform: none;">
+                                <a href="/">
+                                    <div class="flex justify-center hover:bg-black hover:text-white rounded-full items-center mr-1" style="background: white; width: 40px; height: 40px; font-size: 1.5rem; color: black;">↗
+                                    
+                                    
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="w-[100vw]">
+                            <hr class="bg-black opacity-50">
+                        </div>
+
+                        <!-- Nav Blog Link-->
+                        <div class="w-full flex items-center justify-between  overflow-hidden">
+                            <div class="flex">
+                                <div class="p-2">
+                                    <p class="font-mono font-thin text-[0.5rem]">
+                                        [2]
+                                    </p>
+                                </div>
+                        <h1 id="menu-option" class="menut">
+                            <div>
+                                <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">b</span>
+                                <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">l</span>
+                                <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">o</span>
+                                <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">g</span>
+                            </div>
+                        </h1>
+                            </div>
+                    <div id="menu-button" class="menub" style="opacity: 1; transform: none;">
+                        <a href="https://huntdamann.github.io/">
+                            <div class="flex justify-center rounded-full items-center mr-1" style="background: black; width: 40px; height: 40px; font-size: 1.5rem; color: white;">↗
+                            </div>
+                        </a>
+                    </div>
+                        </div>
+
+                        <div class="w-[100vw]">
+                            <hr class="bg-black opacity-50">
+                        </div>
+
+                        <!-- About Link-->
+                        <!-- About Link-->
+                        <div class="w-full flex items-center justify-between overflow-hidden">
+                            <div class="flex">
+                                <div class="p-2">
+                                    <p class="font-mono font-thin text-[0.5rem]">
+                                        [3]
+                                    </p>
+                                </div>
+                        <h1 id="menu-option" class="menut" >
+                            <div class="flex gap-[0.5rem]">
+                                <span class="inline-block">a</span>
+                                <span class="inline-block">b</span>
+                                <span class="inline-block">o</span>
+                                <span class="inline-block">u</span>
+                                <span class="inline-block">t</span>
+                            </div>
+                        </h1>
+                            </div>
+                    <div id="menu-button" class="menub" style="opacity: 1; transform: none;">
+                        <a href="#about">
+                            <div class="flex justify-center rounded-full items-center mr-1" style="background: black; width: 40px; height: 40px; font-size: 1.5rem; color: white;">↗
+                            </div>
+                        </a>
+                    </div>
+                        </div>
+
+                        <!--Line-->
+                        <div class="w-[100vw]">
+                            <hr class="bg-black opacity-50">
+                        </div>
+
+                        <!-- Books Nav Link-->
+                        <div class="w-full flex items-center justify-between overflow-hidden">
+                            <div class="flex">
+                                <div class="p-2">
+                                    <p class="font-mono font-thin text-[0.5rem]">
+                                        [4]
+                                    </p>
+                                </div>
+                                <h1 id="menu-option" class="menut">
+                                    <div class="flex gap-[0.5rem]">
+                                        <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">b</span>
+                                        <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">o</span>
+                                        <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">o</span>
+                                        <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">k</span>
+                                        <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">s</span>
+                                    </div>
+                                </h1>
+                            </div>
+                        <div id="menu-button" class="menub" style="opacity: 1; transform: none;">
+                            <a href="./books.html">
+                                <div class="flex justify-center rounded-full items-center mr-1" style="background: black; width: 40px; height: 40px; font-size: 1.5rem; color: white;">↗
+                                </div>
+                            </a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+              
+            </nav>
+        
+
+    <a href="#foot">
+
+        <div id="arrowDown" onclick="scrollDown()" class="fixed z-[999] bottom-[2rem] text-red-600  right-[1rem] animate-bounce delay[5]">
+      
+            <i class="fa-solid fa-xl fa-circle-arrow-down"></i>
+        </div>
+    </a>
+   
+    </header>
+
+    <main>
+        <section class="p-3">
+            <div class="flex flex-col gap-3 items-center font-engineer">
+
+            <span class="text-slate-800">Want your thoughts actualized?</span>
+            <span class="text-[2.5rem]">Let's talk about you</span>
+            <span>If you have a project in mind or you just want to chat, feel free to get in touch. I'm excited to be of service.</span>
+            <div class="flex items-center gap-2">
+                <i style="color: green;" class="fa-solid fa-xs fa-circle"></i>
+                <span>Reply time: within 1-2 working days</span>
+            </div>
+            <button class="px-2 py-2 bg-logo-red rounded-sm">
+                huntermann33@gmail.com
+            </button>
+            </div>
+            
+        </section>
+
+        <section>
+
+
+        </section>
+
+    </main>
+</body>
+</html>
