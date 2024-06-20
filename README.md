@@ -14,7 +14,7 @@
 |   Feature     | Status          
 | ------------- |:-------------:|
 | Adding transition to elements     | In Progress | 
-| Build Section      | Not Started      |
+| Build Section      | In progress      |
 | Skills  | Done     |
 | Animations | In progress      |
 | Education and Schooling | Done      |
