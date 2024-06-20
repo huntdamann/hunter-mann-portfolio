@@ -23,7 +23,8 @@ let show = 0;
 
 function burgerClick() {
   if (show == 0) {
-    menu.classList.toggle('show'); 
+    menu.classList.toggle('show');
+    burgerIcon.classList.toggle('hide'); 
     menuOptions.forEach(entry => {
 
       console.log("Animating")
@@ -44,6 +45,7 @@ function burgerClick() {
 function doorClick() {
     if (show==1) {
         menu.classList.toggle('show');
+        burgerIcon.classList.toggle('hide');
         console.log('Close Menu')
         menuOptions.forEach(entry => {
 

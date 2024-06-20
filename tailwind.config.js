@@ -21,7 +21,8 @@ module.exports = {
         fadebutton: 'fadeMenuButton 0.5s ease-in',
         open: 'menuOpen 0.5s ease-in',
         skill: 'fadeIn 0.5s',
-        picture: 'animatePicture 2s linear'
+        picture: 'animatePicture 2s linear',
+        bl: 'bounceRight 2s infinite'
       },
       keyframes: {
 
@@ -61,6 +62,13 @@ module.exports = {
           '0%': { opacity: '0', transform: 'scale(0)'},
           '100%': {opacity: '1', transform: 'scale(1)'}
         },
+        bounceRight: {
+          '0%': {transform: 'translateX(20px) '},
+          '25%': {transform: 'translateX(0px) '},
+          '50%': {transform: 'translateX(20px) '},
+          '75%': {transform: 'translateX(0px) '},
+          '100%': {transform: 'translateX(20px) '}
+        }
         
       },
 
@@ -82,6 +90,7 @@ module.exports = {
   plugins: [
     require("tailwindcss-animation-delay"),
     require("tailwindcss-animate"),
+    require("@xpd/tailwind-3dtransforms")
     
   ],
 };

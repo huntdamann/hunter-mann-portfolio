@@ -4,7 +4,7 @@
 
 @layer components {
   .menu {
-    @apply flex flex-row inset-0 transition-all ease-in duration-75 absolute bg-white text-black gap-3  opacity-0 -z-[5] p-16;
+    @apply absolute w-screen bg-white top-10 hidden;
   }
   .menut {
     @apply text-[18vw] uppercase overflow-hidden pl-2 pr-3;
@@ -27,7 +27,13 @@
   }
 
   .show {
-    @apply animate-open opacity-100 z-[999];
+    @apply animate-open flex opacity-100 z-[999];
+  }
+  .hide {
+    @apply opacity-0 z-[-1];
+  }
+  .burger-icon {
+    @apply text-red-800 lg:opacity-0 ml-[10rem];
   }
   .first-project {
     @apply mt-20 mb-2 animate-skill;
