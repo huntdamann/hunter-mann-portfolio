@@ -24,7 +24,7 @@
 
 </head>
 <body class="">
-    <header class="animate-fade transition-all">
+    <header class="animate-fade fixed top-0 z-[998] transition-all">
         <nav id="navbar" class="n">
             <!--Hunter Header-->
             <div class="z-[29]" style="opacity: 1; transform: none;">
@@ -37,12 +37,16 @@
                             <span class="inline-block" style="opacity: 1; transform: none;">t</span>
                             <span class="inline-block" style="opacity: 1; transform: none;">e</span>
                             <span class="inline-block" style="opacity: 1; transform: none;">r</span>
+                            <span class="inline-block" style="opacity: 1; color: red; transform: none;">m</span>
+                            <span class="inline-block" style="opacity: 1; color: red; transform: none;">a</span>
+                            <span class="inline-block" style="opacity: 1; color: red; transform: none;">n</span>
+                            <span class="inline-block" style="opacity: 1; color: red; transform: none;">n</span>
                             <span class="inline-block" style="color: rgb(29, 32, 221); margin-left: 0.15rem; opacity: 1; transform: none;">.</span>
                         </h1>
                     </a>
                 </h1>
             </div>
-            <div id="burger-handle" onclick="burgerClick()" class="text-red-800 lg:opacity-0 ml-[10rem]">
+            <div id="burger-handle" onclick="burgerClick()" class="burger-icon">
                 <i class="fa-solid fa-xl fa-bars-staggered"></i>
             </div>
             <div class="small:opacity-0 lg:opacity-100">
@@ -50,161 +54,97 @@
                     Website is currently designed for MOBILE ONLY
                 </span>
             </div>
-            <nav class="flex border ml-[50rem] xl:ml=[50rem]">
-                <ul class="flex gap-3 justify-evenly">
+            <nav id="menu-handle" class="menu">
+                <i onclick="doorClick()" class="fa-solid fa-2xl fa-door-open" style="position: absolute; right: 1rem; top: -10px;"></i>
+                <ul class="text-[4rem] tracking-wider font-[600] p-3">
+                    <div class="w-[80vw]">
+                        <hr class="bg-black opacity-50">
+                    </div>
+                    <li class="animate-fademenu transform-style-3d flex items-center justify-between p-[1rem]">
+                        
+                        <div class="p-2 mt-[-5rem]">
+                            <p class="font-mono font-thin text-[0.5rem]">
+                                [1]
+                            </p>
+                        </div>
+                        <a id="menu-option" href="/index.html">HOME</a>
+                        <div id="menu-button" class="text-white animate-bl grid place-content-center items-center w-[2rem] h-[2rem] bg-black rounded-full" style="font-size: 1rem;">
+                            →
+                        </div>
                     
-                    <li>Home</li>
-                    <li>About</li>
-                    <li> Blog</li>
-                    <li>Books</li>
+                    </li>
+                    <div class="w-[80vw]">
+                        <hr class="bg-black opacity-50">
+                    </div>
+                    <li class="animate-fademenu transform-style-3d flex items-center justify-between p-[1rem]">
+                        
+                        <div class="p-2 mt-[-5rem]">
+                            <p class="font-mono font-thin text-[0.5rem]">
+                                [2]
+                            </p>
+                        </div>
+                        <a id="menu-option" class="flex items-center gap-3" href="#about">ABOUT</a>
+                        <div id="menu-button" class="text-white animate-bl grid place-content-center items-center w-[2rem] h-[2rem] bg-black rounded-full" style="font-size: 1rem;">
+                            →
+                        </div>
+                        
+                    
+                    </li>
+                    <div class="w-[80vw]">
+                        <hr class="bg-black opacity-50">
+                    </div>
+                    <li class="animate-fademenu transform-style-3d flex items-center justify-between p-[1rem]">
+                        
+                        <div class="p-2 mt-[-5rem]">
+                            <p class="font-mono font-thin text-[0.5rem]">
+                                [3]
+                            </p>
+                        </div>
+                        <a id="menu-option" class="flex items-center gap-3" href="/books.html">BOOKS</a>
+                        <div id="menu-button" class="text-white animate-bl grid place-content-center items-center w-[2rem] h-[2rem] bg-black ml-4 rounded-full" style="font-size: 1rem;">
+                            →
+                        </div>
+                       
+                    
+                    </li>
+                    <div class="w-[80vw]">
+                        <hr class="bg-black opacity-50">
+                    </div>
+                    <li class="animate-fademenu transform-style-3d flex items-center justify-between p-[1rem]">
+                        
+                        <div class="p-2 mt-[-5rem]">
+                            <p class="font-mono font-thin text-[0.5rem]">
+                                [4]
+                            </p>
+                        </div>
+                        <a id="menu-option" href="https://huntdamann.github.io">BLOG</a>
+                        <div id="menu-button" class="text-white animate-bl transform-style-3d grid place-content-center items-center w-[2rem] h-[2rem] bg-black rounded-full" style="font-size: 1rem;">
+                            →
+                        </div>
+                    
+                    </li>
+                    <div class="w-[80vw]">
+                        <hr class="bg-black opacity-50">
+                    </div>
+                    
                 </ul>
             </nav>
-            <nav id="menu-handle" class="menu" style="transform: translateY(0%) translateZ(0px);">
-                <div class="flex flex-col justify-center items-center h-full font-rubik text-[1.5rem] gap-2">
-                    <div class="overflow-hidden text-center h-full pt-16 flex flex-col items-center justify-start">
-                        
-                        <div id="door-handle" onclick="doorClick()" class="absolute z-50 text-black top-[3rem] left-[21rem]">
-                            <i class="fa-solid fa-door-open"></i>
-                        </div>
-                        
-                        <div class="w-[100vw]">
-                            <hr class="bg-black opacity-50">
-                        </div>
-                        <div class="w-full flex items-center justify-between overflow-hidden" style="color: white; background: black;">
-                            <div class="flex">
-                                <div class="p-2">
-                                    <p class="font-mono font-thin text-[0.5rem]">
-                                        [1]
-                                    </p>
-                                </div>
-                                <h1 id="menu-option" class="text-[18vw] uppercase overflow-hidden pl-4 pr-3">
-                                    <div>
-                                        <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">h</span>
-                                        <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">o</span>
-                                        <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">m</span>
-                                        <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">e</span>
-                                    </div>
-                                </h1>
-                    
-                            </div>
-                            <!--Nav Menu Arrow Buttom-->
-                            <div id="menu-button" class="menub" style="opacity: 1; transform: none;">
-                                <a href="/">
-                                    <div class="flex justify-center hover:bg-black hover:text-white rounded-full items-center mr-1" style="background: white; width: 40px; height: 40px; font-size: 1.5rem; color: black;">↗
-                                    
-                                    
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="w-[100vw]">
-                            <hr class="bg-black opacity-50">
-                        </div>
-
-                        <!-- Nav Blog Link-->
-                        <div class="w-full flex items-center justify-between  overflow-hidden">
-                            <div class="flex">
-                                <div class="p-2">
-                                    <p class="font-mono font-thin text-[0.5rem]">
-                                        [2]
-                                    </p>
-                                </div>
-                        <h1 id="menu-option" class="menut">
-                            <div>
-                                <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">b</span>
-                                <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">l</span>
-                                <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">o</span>
-                                <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">g</span>
-                            </div>
-                        </h1>
-                            </div>
-                    <div id="menu-button" class="menub" style="opacity: 1; transform: none;">
-                        <a href="https://huntdamann.github.io/">
-                            <div class="flex justify-center rounded-full items-center mr-1" style="background: black; width: 40px; height: 40px; font-size: 1.5rem; color: white;">↗
-                            </div>
-                        </a>
-                    </div>
-                        </div>
-
-                        <div class="w-[100vw]">
-                            <hr class="bg-black opacity-50">
-                        </div>
-
-                        <!-- About Link-->
-                        <!-- About Link-->
-                        <div class="w-full flex items-center justify-between overflow-hidden">
-                            <div class="flex">
-                                <div class="p-2">
-                                    <p class="font-mono font-thin text-[0.5rem]">
-                                        [3]
-                                    </p>
-                                </div>
-                        <h1 id="menu-option" class="menut" >
-                            <div class="flex gap-[0.5rem]">
-                                <span class="inline-block">a</span>
-                                <span class="inline-block">b</span>
-                                <span class="inline-block">o</span>
-                                <span class="inline-block">u</span>
-                                <span class="inline-block">t</span>
-                            </div>
-                        </h1>
-                            </div>
-                    <div id="menu-button" class="menub" style="opacity: 1; transform: none;">
-                        <a href="#about">
-                            <div class="flex justify-center rounded-full items-center mr-1" style="background: black; width: 40px; height: 40px; font-size: 1.5rem; color: white;">↗
-                            </div>
-                        </a>
-                    </div>
-                        </div>
-
-                        <!--Line-->
-                        <div class="w-[100vw]">
-                            <hr class="bg-black opacity-50">
-                        </div>
-
-                        <!-- Books Nav Link-->
-                        <div class="w-full flex items-center justify-between overflow-hidden">
-                            <div class="flex">
-                                <div class="p-2">
-                                    <p class="font-mono font-thin text-[0.5rem]">
-                                        [4]
-                                    </p>
-                                </div>
-                                <h1 id="menu-option" class="menut">
-                                    <div class="flex gap-[0.5rem]">
-                                        <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">b</span>
-                                        <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">o</span>
-                                        <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">o</span>
-                                        <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">k</span>
-                                        <span class="inline-block" style="transform: translateY(0%) translateZ(0px);">s</span>
-                                    </div>
-                                </h1>
-                            </div>
-                        <div id="menu-button" class="menub" style="opacity: 1; transform: none;">
-                            <a href="./books.html">
-                                <div class="flex justify-center rounded-full items-center mr-1" style="background: black; width: 40px; height: 40px; font-size: 1.5rem; color: white;">↗
-                                </div>
-                            </a>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-              
-            </nav>
+          
         
 
-    <a href="#foot">
+            <a href="#foot">
 
-        <div id="arrowDown" onclick="scrollDown()" class="fixed z-[999] bottom-[2rem] text-red-600  right-[1rem] animate-bounce delay[5]">
-      
-            <i class="fa-solid fa-xl fa-circle-arrow-down"></i>
-        </div>
-    </a>
+                <div id="arrowDown" onclick="scrollDown()" class="fixed z-[999] bottom-[2rem] text-red-600  right-[1rem] animate-bounce delay[5]">
+            
+                    <i class="fa-solid fa-xl fa-circle-arrow-down"></i>
+                </div>
+            </a>
+        </nav>
    
     </header>
 
     <main>
-        <section class="p-3">
+        <section class="p-3 mt-[5rem]">
             <div class="flex flex-col gap-3 items-center font-engineer">
 
             <span class="text-slate-800">Want your thoughts actualized?</span>
@@ -214,18 +154,91 @@
                 <i style="color: green;" class="fa-solid fa-xs fa-circle"></i>
                 <span>Reply time: within 1-2 working days</span>
             </div>
-            <button class="px-2 py-2 bg-logo-red rounded-sm">
-                huntermann33@gmail.com
+            <button class="px-2 py-2 bg-logo-red rounded-lg">
+                hunter.mann2433@gmail.com
             </button>
             </div>
             
         </section>
 
-        <section>
+        <section class="border text-center font-engineer mt-[3rem] p-3">
+            <span class="text-gray-500">How I work</span>
+            <h1 class="text-3xl font-[600]">Profitable Design</h1>
+            <p class="p-2">
+                As an engineer with a little knowledge and big aspirations in business I'm always focused on solving problems in the most effiecient way. I am a full believer in the engineering process.
+                Because of this belief, I start each project with detailed questions and research so that I can figure out the best ways to help you create a reality that's enjoyable, as well as profitable. 
+            </p>
+            <p class="p-2">
+                I only work with a select amount of clients at a time in order to ensure that you'll receive my full attention and effort. This allows me to ensure high quality work and meaningful results.
+                I will only accept your project if I believe that I can add value to your business/ideas, where the benefits outweigh the money and time invested.
 
+            </p>
 
         </section>
 
+        <!--Schedule Now-->
+        <section class="font-engineer mt-[4rem]">
+
+            <div class="p-2 flex flex-col gap-[5rem]  h-screen">
+
+                <div class="bg-logo-red rounded-lg text-white p-2 text-center">
+                    <h1 class="text-3xl font-bold ">Web App Design & Security</h1>
+                    <p class="p-4 w-[23rem]">
+                        Start here if you have a great idea for a web application, or if you are interested in better securing your web app. This is ideal for long-term projects, such as web development/design, vulnerability assessments,
+                        or front-end development.
+                    </p>
+                    <span>Start a project now ></span>
+                </div>
+                <div class="bg-red-500 rounded-lg text-white p-2 text-center">
+                    <h1 class="text-3xl font-bold">General Consultation</h1>
+                    <p class="p-4 w-[23rem]">
+                        If you would like an outside perspective of your project, want some feedback, or want to discuss how we can maximize your goals together, begin here to schedule a brief 15-min call.
+                    </p>
+                    <span>Scedule now ></span>
+                </div>
+
+
+
+            </div>
+        </section>
+
     </main>
+    <footer id="foot" class="bg-[#00171F] text-white mt-20 flex flex-col items-center text-lg sm:justify-between p-5 sm:p-12">
+        <div class="w-full flex justify-between items-end">
+            <div class="w-full">
+                <p class="font-sans lowercase text-[9vw] sm:text-[3.5vw] leading-none">contact me.
+
+                </p>
+            </div>
+            <div class="flex flex-col items-center">
+               [remember to add here]
+            </div>
+        </div>
+        <hr class="w-full my-4 sm:my-6">
+        <div class="w-full flex justify-between font-mono font-thin text-[0.45rem] sm:text-[0.6rem]">
+            <div class="flex flex-col small:gap-[0.25rem] justify-between uppercase">
+                <a target="" href="https://www.linkedin.com/in/hunter-mann-140178127/">linkedin →</a>
+                <a target="" href="https://twitter.com/huntdatechguy">x →</a>
+                <a target="" href="https://github.com/huntdamann">github →</a>
+                <a target="" href="https://www.goodreads.com/user/show/177529798-hunter">GoodReads →</a>
+                <a target="" href="mailto:hunter.mann24@gmail.com">hunter.mann24@gmail.com →</a>
+                <a target="" href="mailto:leeman.hunt24@gmail.com">leeman.hunt24@gmail.com →</a>
+            </div>
+            <div class="flex flex-col gap-1 items-end">
+                <p>
+                    <span class="font-mono mr-1 text-[0.7rem] ">© 2024</span>
+                    <span class="font-sans text-[0.85rem]">Hunter Mann</span>
+                </p>
+                <div class="flex flex-col gap-1 uppercase text-right text-[0.45rem] sm:text-[0.6rem]">
+                    <p>designed and coded by hunter mann.</p>
+                    <p>inspired by kostya farber.</p>
+                    <p>"life's a game, but if you become a creator of game, doors will open..." </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./src/js/main.js" defer></script>
+    <script src="./src/js/observer.js" defer></script>
+    <script src="./node_modules/intersection-observer/intersection-observer.js"></script>
 </body>
 </html>
