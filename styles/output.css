@@ -1076,6 +1076,10 @@ video {
   margin-left: 2rem;
 }
 
+.ml-\[2rem\] {
+  margin-left: 2rem;
+}
+
 .ml-auto {
   margin-left: auto;
 }
@@ -1114,6 +1118,10 @@ video {
 
 .mt-5 {
   margin-top: 1.25rem;
+}
+
+.mt-\[-1\.25rem\] {
+  margin-top: -1.25rem;
 }
 
 .mt-\[-5rem\] {
@@ -1259,12 +1267,16 @@ video {
   height: 50%;
 }
 
+.h-\[5rem\] {
+  height: 5rem;
+}
+
 .h-\[6rem\] {
   height: 6rem;
 }
 
-.h-\[85vh\] {
-  height: 85vh;
+.h-\[95vh\] {
+  height: 95vh;
 }
 
 .h-fit {
@@ -1292,6 +1304,10 @@ video {
   width: 100%;
 }
 
+.w-\[10rem\] {
+  width: 10rem;
+}
+
 .w-\[150px\] {
   width: 150px;
 }
@@ -1314,6 +1330,10 @@ video {
 
 .w-\[30rem\] {
   width: 30rem;
+}
+
+.w-\[45ch\] {
+  width: 45ch;
 }
 
 .w-\[50ch\] {
@@ -2825,20 +2845,16 @@ video {
   font-size: 0.45rem;
 }
 
-.text-\[0\.55rem\] {
-  font-size: 0.55rem;
-}
-
 .text-\[0\.5rem\] {
   font-size: 0.5rem;
 }
 
-.text-\[0\.65rem\] {
-  font-size: 0.65rem;
-}
-
 .text-\[0\.6rem\] {
   font-size: 0.6rem;
+}
+
+.text-\[0\.75rem\] {
+  font-size: 0.75rem;
 }
 
 .text-\[0\.7rem\] {
@@ -2847,6 +2863,10 @@ video {
 
 .text-\[0\.85rem\] {
   font-size: 0.85rem;
+}
+
+.text-\[0\.8rem\] {
+  font-size: 0.8rem;
 }
 
 .text-\[0\.9rem\] {
@@ -2879,6 +2899,10 @@ video {
 
 .text-\[7\.5vw\] {
   font-size: 7.5vw;
+}
+
+.text-\[9\.5vw\] {
+  font-size: 9.5vw;
 }
 
 .text-\[9vw\] {
@@ -3024,9 +3048,9 @@ video {
   color: rgb(51 102 153 / .35);
 }
 
-.text-\[blue\] {
+.text-\[\#ff0000\] {
   --tw-text-opacity: 1;
-  color: rgb(0 0 255 / var(--tw-text-opacity));
+  color: rgb(255 0 0 / var(--tw-text-opacity));
 }
 
 .text-blue-500 {
@@ -3052,6 +3076,11 @@ video {
 .text-red-600 {
   --tw-text-opacity: 1;
   color: rgb(220 38 38 / var(--tw-text-opacity));
+}
+
+.text-slate-200 {
+  --tw-text-opacity: 1;
+  color: rgb(226 232 240 / var(--tw-text-opacity));
 }
 
 .text-slate-800 {
@@ -3891,10 +3920,6 @@ video {
     padding: 0.5rem;
   }
 
-  .small\:text-\[0\.5rem\] {
-    font-size: 0.5rem;
-  }
-
   .small\:text-\[0\.75rem\] {
     font-size: 0.75rem;
   }
@@ -3903,8 +3928,8 @@ video {
     font-size: 0.8rem;
   }
 
-  .small\:text-\[3\.5vw\] {
-    font-size: 3.5vw;
+  .small\:text-\[4\.5vw\] {
+    font-size: 4.5vw;
   }
 
   .small\:opacity-0 {
@@ -3940,10 +3965,6 @@ video {
 
   .sm\:p-14 {
     padding: 3.5rem;
-  }
-
-  .sm\:text-\[0\.65rem\] {
-    font-size: 0.65rem;
   }
 
   .sm\:text-\[0\.6rem\] {
