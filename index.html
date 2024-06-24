@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html class="scroll-smooth" lang="en">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Responsive Portfolio Website for Engineer">
     <meta name="keywords" content="HTML, CSS, JavaScript, Hunter Mann, Computer Engineer">
     <meta name="author" content="Hunter Mann">
-    
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/swup/2.0.8/swup.min.js"></script>
+    <script defer src="./src/js/page-transit.js"></script>
     <title>Hunter Mann | Let's Build Together</title>
 
     <link rel="stylesheet" href="./styles/styles.css">
@@ -27,8 +28,8 @@
 
 
 </head>
-<body class="p-0 m-0">
-    <header class="animate-fade fixed top-0 z-[998] transition-all">
+<body class="p-0 m-0 scroll-smooth">
+    <header class="fixed top-0 z-[998] transition-all">
         <nav id="navbar" class="n">
             <!--Hunter Header-->
             <div class="z-[29]" style="opacity: 1; transform: none;">
@@ -146,687 +147,693 @@
         </nav>
    
     </header>
-    <!--Entire Content-->
-    <section class="mt-[10rem] z-[999] lg:hidden">
-        <section>
-            <!--Hero Section-->
-           <nav class="parallax">
 
-           
-            <section id="section-1" class="mt-3 animate-fadetwo p-1 small:gap-1 border-[0px]">
-                <!--Hero Container-->
-                <div>
+    <main id="swup" class="animate-fade">
 
-                    <!--Computer Engineer-->
-                    <div>
-                        <div>
-                            <p class="font-mono font-thin text-[0.75rem] sm:text-[0.75rem] text-right">[2024]</p>
-                        </div>
-
-                        <div class="flex flex-col justify-normal gap-0">
-                        <h1 class="text-[20vw] font-engineer sm:text-[17.5vw] tracking-[-5px] leading-[0.5]">Computer —</h1>
-                        <h1 class="text-[14.5vw] sm:text-[13vw]">
-                            <span>e</span>
-                            <span class="font-plumpelo-pixelated-2">n</span>
-                            <span class="font-plumpelo-pixelated-2">g</span>
-                            <span class="font-plumpelo-pixelated-2">i</span>
-                            <span class="font-plumpelo-pixelated-2">n</span>
-                            <span class="font-plumpelo-pixelated-2">e</span>
-                            <span>e</span>
-                            <span class="font-plumpelo-pixelated-2">r</span>
-                            <span class="text-primary">.</span>
-                        </h1>
-                        </div>
-                        <p class="font-mono font-thin uppercase small:text-[0.75rem] text-[0.75rem]"> 📍 0.0.0.8/24</p>
-
-                    </div>
-                    <!--Name & Quote-->
-                    <div>
-                        <div class="flex flex-col  mt-3 gap-1 font-engineer text-center text-[0.75rem] font-[300] mb-8 sm:text-[0.6rem]">
-                            <p>hunter mann</p>
-                            <p>Let's build an enjoyable  
-                                <span class="text-primary">reality together.</span>
-                            </p>
-                        </div>
-
-                    </div>
-
-                    <!--Portrait Image-->
-                    <div id="image" class="border flex bg-black items-center p-10 w-full h-full overflow-y-hidden overflow-x-hidden">
-                        <div class="border-[5px]">
-
-                            <img src="./src/MOSHED-2024-6-8-9-27-11.gif" alt="">
-
-                        </div>
-                        
-                         
-                    </div>
-                    <div class="w-[100%] flex items-center justify-between mt-1 font-engineer font-[300] text-left text-[0.75rem]">
-                        <p class="">me_bitmap.png</p>
-                        <p>24kb</p>
-                    </div>
-
-                </div>
-
-
-            </section>
-
-            </nav>
-
-            <!--About Me-->
-            <section id="about" class="mt-10 animate-fadetwo transition-all p-3">
-                <div class="h-[95vh] flex-col bg-slate-400 font-[500] overflow-hidden rounded-lg relative flex items-center justify-center">
-                    <div class="w-[80%] h-full flex flex-col items-center">
-                        <article class="w-full  h-full font-mono text-[0.6rem] small:text-[0.8rem] font-thin small:mr-[5.5rem]">
-                            <fieldset class="border-[5px] p-3 border-black w-[30rem] h-full">
-                                <legend>whoami</legend>
-                                <main>
-                                    <h1 class="uppercase">hunter (33)</h1>
-                                    <p class="uppercase mt-5">Name</p>
-                                    <p class="pl-5 ml-[2rem] mt-[-1.25rem] w-[10rem] text-[0.8rem] sm:text-[0.8rem]">hunter - engineer, developer, aspiring polymath</p>
-                                    <p class="uppercase mt-5">Synopsis</p><p class="pl-5 text-[0.75rem] sm:text-[0.75rem] w-[65ch]">k -[vfs] [...book]</p>
-                                    <p class="uppercase mt-5">Description</p>
-                                    <div class="flex flex-col gap-1">
-                                        <p class="pl-5 text-[0.75rem] sm:text-[0.75rem] w-[45ch]">hunter helps turn thoughts into reality, usually sequentially, writing them to standard world output. He also designs and builds things, some of which include websites, computers, experiences, and more.</p> 
-                                        <p class="pl-5 text-[0.75rem] sm:text-[0.75rem] w-[45ch]">this tool is often used in conjunction with other programs, for instance, piping books into stdin of his brain. Sometimes these words get piped into a collection found on the<a class="text-[#ff0000]" href="/books.html"> internet.</a></p>
-                                        <p class="pl-5 text-[0.75rem] sm:text-[0.75rem] w-[45ch]">finally, hunter pairs quite nicely with things that include: (insert current topic of non-fiction book being consumed), running miles, voice acting, music, piano, basketball, calisthenics & gym, hacking, web development... ad infinitum.</p>
-                                        <p class="uppercase mt-5">Usage</p>
-                                        <p class="pl-5 text-[0.75rem] sm:text-[0.75rem] w-[50ch]">currently, hunter is being used in the following contexts:</p>
-                                        <p class="pl-10 text-[0.75rem] sm:text-[0.75rem] w-[50ch] font-medium">hunter | [python, --create-content, --pentesting, -UIUXdesign] > [free lance]</p>
-                                    </div>
-                                </main>
-                            </fieldset>
-                        </article>
-                    </div>
-
-                </div>
-            </section>
-            <!--How I Work-->
-            <section class=" font-engineer z-[999] mt-5">
-                <div class="font-mono flex items-center justify-center">
-                    <p>---</p>
-                </div>
-                <h1 class="px-3 font-bold text-[9.5vw] small:text-[4.5vw]">what i do.</h1>
-                <div class="flex flex-col items-center mt-3 px-[2rem] gap-4">
-
-                   
-                    <span>
-                        Reach your business goals with detailed design, user experience and security. Let's start working on building/securing your awesome web app...
-                    </span>
-                    <div class="flex items-center gap-3">
+        <section class="mt-[10rem] z-[999] lg:hidden">
+            <section>
+                <!--Hero Section-->
+               <nav class="parallax">
     
-                        <button class="bg-blue-700 w-[10rem] h-[5rem] py-2 px-2 rounded-md shadow-lg">
-                            
-                            <a class="text-slate-200 w-full h-full" style="font-size: 24px;" href="https://kk7izp8nzdm.typeform.com/to/MRaQNFIE">Start project</a>
-                        </button>
-                        <button class="bg-black w-[10rem] h-[5rem] py-2 px-2 rounded-md shadow-lg">
-                            
-                            <a class="text-slate-200 w-full h-full" style="font-size: 24px;" href="/work.html">Find Out More</a>
-                        </button>
-                       
-                           
-
-                    </div>
-
-
-
-                </div>
-                
-            </section>
-            <!--Projects and Blogs-->
-            <section class="p-2 mt-20 ml-8 font-engineer">
-                <div class="w-full mb-8">
-                <div class="w-full flex p-0 py-1">
-                    <div class="font-mono font-thin text-[0.3rem] small:text-[0.75rem]" style="writing-mode: vertical-lr;">
-                            <p>65 74 65 72 6E 61 6C 6C 79</p>
-                            <p>75 6E 66 69 6E 69 73 68 65 64 2E</p>
-                    </div>
-                    <div class="flex flex-col items-center border p-2 border-black justify-center small:w-[17rem]">
-                            <div class="w-full relative flex-col flex items-center justify-center p-20 font-mono font-thin text-[0.75rem]">
-                                <img alt="random marker scribble" fetchpriority="high" width="900" height="574" decoding="async" data-nimg="1" src="./src/drawing.png" style="color: transparent;">
-                                <p class="absolute left-[0.4rem] bottom-[0.25rem] uppercase text-[0.6rem]">projects.</p>
-                                <p class="absolute top-[0.4rem] right-[0.4rem] text-[0.6rem]">
-                                    [24]
-
-                                </p>
-                                <p class="absolute bottom-0 left-[13rem]">[0:key]</p>
-                                <div class="flex flex-col  p-3 absolute top-[12rem] w-[8rem]">
-                                    <div class="flex items-center">
-                                        <div style="transform: none;">
-                                            <div class="flex justify-center rounded-full items-center mr-1" style="background: rgba(250, 170, 255); width: 1.0rem; height: 1.0rem; font-size: 0.6rem; color: white;">
-                                                R
-                                            </div>
-                                        </div>
-                                        <p>-- Researching</p>
-
-                                    </div>
-                                    <div class="flex items-center">
-                                        <div style="transform: none;">
-                                            <div class="flex justify-center rounded-full items-center mr-1" style="background: rgb(0, 57, 166); width: 1.0rem; height: 1.0rem; font-size: 0.6rem; color: white;">
-                                                P
-                                            </div>
-                                        </div>
-                                        <p>-- Planning</p>
-
-                                    </div>
-                                    <div class="flex items-center">
-                                        <div style="transform: none;">
-                                            <div class="flex justify-center rounded-full items-center mr-1" style="background: rgb(99, 3, 180); width: 1.0rem; height: 1.0rem; font-size: 0.6rem; color: white;">
-                                                C
-                                            </div>
-                                        </div>
-                                        <p>-- Creating</p>
-
-                                    </div>
-                                    <div class="flex items-center">
-                                        <div style="transform: none;">
-                                            <div class="flex justify-center rounded-full items-center mr-1" style="background: rgb(145, 56, 49); width: 1.0rem; height: 1.0rem; font-size: 0.6rem; color: white;">
-                                                T
-                                            </div>
-                                        </div>
-                                        <p>-- Testing</p>
-
-                                    </div>
-                                    <div class="flex items-center">
-                                        <div style="transform: none;">
-                                            <div class="flex justify-center rounded-full items-center mr-1" style="background: rgb(79, 121, 66); width: 1.0rem; height: 1.0rem; font-size: 0.6rem; color: white;">
-                                                F
-                                            </div>
-                                        </div>
-                                        <p>-- Finished</p>
-
-                                    </div>
-                                    
-                                </div>
+               
+                <section id="section-1" class="mt-3 p-1 small:gap-1 border-[0px]">
+                    <!--Hero Container-->
+                    <div>
+    
+                        <!--Computer Engineer-->
+                        <div>
+                            <div>
+                                <p class="font-mono font-thin text-[0.75rem] sm:text-[0.75rem] text-right">[2024]</p>
                             </div>
-
-                        <!--Projects Section-->
-                        <div class="mt-4 w-full">
-                                <!--Individual Project-->
-                                <div id="skill" class="first-project h">
-                                    <div class="flex items-center justify-between">
-                                        <div class="flex flex-col gap-1" style="opacity: 1; transform: none;">
-                                            <a href="https://huntdamann.github.io/">
-
+    
+                            <div class="flex flex-col justify-normal gap-0">
+                            <h1 class="text-[20vw] font-engineer sm:text-[17.5vw] tracking-[-5px] leading-[0.5]">Computer —</h1>
+                            <h1 class="text-[14.5vw] sm:text-[13vw]">
+                                <span>e</span>
+                                <span class="font-plumpelo-pixelated-2">n</span>
+                                <span class="font-plumpelo-pixelated-2">g</span>
+                                <span class="font-plumpelo-pixelated-2">i</span>
+                                <span class="font-plumpelo-pixelated-2">n</span>
+                                <span class="font-plumpelo-pixelated-2">e</span>
+                                <span>e</span>
+                                <span class="font-plumpelo-pixelated-2">r</span>
+                                <span class="text-primary">.</span>
+                            </h1>
+                            </div>
+                            <p class="font-mono font-thin uppercase small:text-[0.75rem] text-[0.75rem]"> 📍 0.0.0.8/24</p>
+    
+                        </div>
+                        <!--Name & Quote-->
+                        <div>
+                            <div class="flex flex-col  mt-3 gap-1 font-engineer text-center text-[0.75rem] font-[300] mb-8 sm:text-[0.6rem]">
+                                <p>hunter mann</p>
+                                <p>Let's build an enjoyable  
+                                    <span class="text-primary">reality together.</span>
+                                </p>
+                            </div>
+    
+                        </div>
+    
+                        <!--Portrait Image-->
+                        <div id="image" class="border flex bg-black items-center p-10 w-full h-full overflow-y-hidden overflow-x-hidden">
+                            <div class="border-[5px]">
+    
+                                <img src="./src/MOSHED-2024-6-8-9-27-11.gif" alt="">
+    
+                            </div>
+                            
+                             
+                        </div>
+                        <div class="w-[100%] flex items-center justify-between mt-1 font-engineer font-[300] text-left text-[0.75rem]">
+                            <p class="">me_bitmap.png</p>
+                            <p>24kb</p>
+                        </div>
+    
+                    </div>
+    
+    
+                </section>
+    
+                </nav>
+    
+                <!--About Me-->
+                <section id="about" class="mt-10 animate-fadetwo transition-all p-3">
+                    <div class="h-[95vh] flex-col bg-slate-400 font-[500] overflow-hidden rounded-lg relative flex items-center justify-center">
+                        <div class="w-[80%] h-full flex flex-col items-center">
+                            <article class="w-full  h-full font-mono text-[0.6rem] small:text-[0.8rem] font-thin small:mr-[5.5rem]">
+                                <fieldset class="border-[5px] p-3 border-black w-[30rem] h-full">
+                                    <legend>whoami</legend>
+                                    <main>
+                                        <h1 class="uppercase">hunter (33)</h1>
+                                        <p class="uppercase mt-5">Name</p>
+                                        <p class="pl-5 ml-[2rem] mt-[-1.25rem] w-[10rem] text-[0.8rem] sm:text-[0.8rem]">hunter - engineer, developer, aspiring polymath</p>
+                                        <p class="uppercase mt-5">Synopsis</p><p class="pl-5 text-[0.75rem] sm:text-[0.75rem] w-[65ch]">k -[vfs] [...book]</p>
+                                        <p class="uppercase mt-5">Description</p>
+                                        <div class="flex flex-col gap-1">
+                                            <p class="pl-5 text-[0.75rem] sm:text-[0.75rem] w-[45ch]">hunter helps turn thoughts into reality, usually sequentially, writing them to standard world output. He also designs and builds things, some of which include websites, computers, experiences, and more.</p> 
+                                            <p class="pl-5 text-[0.75rem] sm:text-[0.75rem] w-[45ch]">this tool is often used in conjunction with other programs, for instance, piping books into stdin of his brain. Sometimes these words get piped into a collection found on the<a class="text-[#ff0000]" href="/books.html"> internet.</a></p>
+                                            <p class="pl-5 text-[0.75rem] sm:text-[0.75rem] w-[45ch]">finally, hunter pairs quite nicely with things that include: (insert current topic of non-fiction book being consumed), running miles, voice acting, music, piano, basketball, calisthenics & gym, hacking, web development... ad infinitum.</p>
+                                            <p class="uppercase mt-5">Usage</p>
+                                            <p class="pl-5 text-[0.75rem] sm:text-[0.75rem] w-[50ch]">currently, hunter is being used in the following contexts:</p>
+                                            <p class="pl-10 text-[0.75rem] sm:text-[0.75rem] w-[50ch] font-medium">hunter | [python, --create-content, --pentesting, -UIUXdesign] > [free lance]</p>
+                                        </div>
+                                    </main>
+                                </fieldset>
+                            </article>
+                        </div>
+    
+                    </div>
+                </section>
+                <!--How I Work-->
+                <section class=" font-engineer z-[999] mt-5">
+                    <div class="font-mono flex items-center justify-center">
+                        <p>---</p>
+                    </div>
+                    <h1 class="px-3 font-bold text-[9.5vw] small:text-[4.5vw]">what i do.</h1>
+                    <div class="flex flex-col items-center mt-3 px-[2rem] gap-4">
+    
+                       
+                        <span>
+                            Reach your business goals with detailed design, user experience and security. Let's start working on building/securing your awesome web app...
+                        </span>
+                        <div class="flex items-center gap-3">
+        
+                            <button class="bg-blue-700 w-[10rem] h-[5rem] py-2 px-2 rounded-md shadow-lg">
+                                
+                                <a class="text-slate-200 w-full h-full" style="font-size: 24px;" href="https://kk7izp8nzdm.typeform.com/to/MRaQNFIE">Start project</a>
+                            </button>
+                            <button class="bg-black w-[10rem] h-[5rem] py-2 px-2 rounded-md shadow-lg">
+                                
+                                <a class="text-slate-200 w-full h-full" style="font-size: 24px;" href="/work.html">Find Out More</a>
+                            </button>
+                           
+                               
+    
+                        </div>
+    
+    
+    
+                    </div>
+                    
+                </section>
+                <!--Projects and Blogs-->
+                <section class="p-2 mt-20 ml-8 font-engineer">
+                    <div class="w-full mb-8">
+                    <div class="w-full flex p-0 py-1">
+                        <div class="font-mono font-thin text-[0.3rem] small:text-[0.75rem]" style="writing-mode: vertical-lr;">
+                                <p>65 74 65 72 6E 61 6C 6C 79</p>
+                                <p>75 6E 66 69 6E 69 73 68 65 64 2E</p>
+                        </div>
+                        <div class="flex flex-col items-center border p-2 border-black justify-center small:w-[17rem]">
+                                <div class="w-full relative flex-col flex items-center justify-center p-20 font-mono font-thin text-[0.75rem]">
+                                    <img alt="random marker scribble" fetchpriority="high" width="900" height="574" decoding="async" data-nimg="1" src="./src/drawing.png" style="color: transparent;">
+                                    <p class="absolute left-[0.4rem] bottom-[0.25rem] uppercase text-[0.6rem]">projects.</p>
+                                    <p class="absolute top-[0.4rem] right-[0.4rem] text-[0.6rem]">
+                                        [24]
+    
+                                    </p>
+                                    <p class="absolute bottom-0 left-[13rem]">[0:key]</p>
+                                    <div class="flex flex-col  p-3 absolute top-[12rem] w-[8rem]">
+                                        <div class="flex items-center">
+                                            <div style="transform: none;">
+                                                <div class="flex justify-center rounded-full items-center mr-1" style="background: rgba(250, 170, 255); width: 1.0rem; height: 1.0rem; font-size: 0.6rem; color: white;">
+                                                    R
+                                                </div>
+                                            </div>
+                                            <p>-- Researching</p>
+    
+                                        </div>
+                                        <div class="flex items-center">
+                                            <div style="transform: none;">
+                                                <div class="flex justify-center rounded-full items-center mr-1" style="background: rgb(0, 57, 166); width: 1.0rem; height: 1.0rem; font-size: 0.6rem; color: white;">
+                                                    P
+                                                </div>
+                                            </div>
+                                            <p>-- Planning</p>
+    
+                                        </div>
+                                        <div class="flex items-center">
+                                            <div style="transform: none;">
+                                                <div class="flex justify-center rounded-full items-center mr-1" style="background: rgb(99, 3, 180); width: 1.0rem; height: 1.0rem; font-size: 0.6rem; color: white;">
+                                                    C
+                                                </div>
+                                            </div>
+                                            <p>-- Creating</p>
+    
+                                        </div>
+                                        <div class="flex items-center">
+                                            <div style="transform: none;">
+                                                <div class="flex justify-center rounded-full items-center mr-1" style="background: rgb(145, 56, 49); width: 1.0rem; height: 1.0rem; font-size: 0.6rem; color: white;">
+                                                    T
+                                                </div>
+                                            </div>
+                                            <p>-- Testing</p>
+    
+                                        </div>
+                                        <div class="flex items-center">
+                                            <div style="transform: none;">
+                                                <div class="flex justify-center rounded-full items-center mr-1" style="background: rgb(79, 121, 66); width: 1.0rem; height: 1.0rem; font-size: 0.6rem; color: white;">
+                                                    F
+                                                </div>
+                                            </div>
+                                            <p>-- Finished</p>
+    
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+    
+                            <!--Projects Section-->
+                            <div class="mt-4 w-full">
+                                    <!--Individual Project-->
+                                    <div id="skill" class="first-project h">
+                                        <div class="flex items-center justify-between">
+                                            <div class="flex flex-col gap-1" style="opacity: 1; transform: none;">
+                                                <a href="https://huntdamann.github.io/">
+    
+                                                    <div class="flex items-center">
+                                                        <h1 class="font-engineer uppercase font-[300] text-[0.75rem] sm:text-[0.85rem]">Security Demystified</h1>
+                                                        <div class="font-mono ml-2 text-[0.85rem] text-logo-red sm:text-[0.85rem]" >→</div>
+                                                    </div>
+                                                    <div class="pr-8">
+                                                        <p class="font-rubik opacity-75 font-[200] text-[0.75rem] sm:text-[0.8rem]">Helping Break down topics revolving around cybersecurity and tech.</p> 
+                                                    </div>
+    
+                                                </a>
+                                                
+                                                
+                                            </div>
+                                                <div class="flex gap-1" style="transform: none;">
+                                                    
+                                                    <div class="animate-fadethree transition-all" style="transform: none;">
+                                                        <div class="flex justify-center rounded-lg items-center mr-1" style="background: rgb(79, 121, 66); width: 1.5rem; height: 1.5rem; font-size: 0.9rem; color: white; animation-delay: 2s;">
+                                                            F
+                                                        </div>
+                                                    </div>
+                                                    
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <hr class="line h">
+                                     <!--Individual Project-->
+                                     <div id="skill" class="project h">
+                                        <div class="flex items-center justify-between">
+                                            <div class="flex flex-col gap-1" style="opacity: 1; transform: none;">
                                                 <div class="flex items-center">
-                                                    <h1 class="font-engineer uppercase font-[300] text-[0.75rem] sm:text-[0.85rem]">Security Demystified</h1>
-                                                    <div class="font-mono ml-2 text-[0.85rem] text-logo-red sm:text-[0.85rem]" >→</div>
+                                                    <h1 class="font-engineer uppercase font-[300] text-[0.75rem] sm:text-[0.85rem]">RaspberryPi Threat Analysis Lab</h1>
+                                                    <a class="rotate-link font-mono ml-2 text-[0.85rem] text-logo-red sm:text-[0.85rem]" href="https://github.com/huntdamann/Security-Home-Lab">→</a>
                                                 </div>
                                                 <div class="pr-8">
-                                                    <p class="font-rubik opacity-75 font-[200] text-[0.75rem] sm:text-[0.8rem]">Helping Break down topics revolving around cybersecurity and tech.</p> 
+                                                    <p class="font-rubik opacity-75 font-[200] text-[0.75rem] sm:text-[0.8rem]">[Description: Loading]</p> 
                                                 </div>
-
-                                            </a>
-                                            
-                                            
+                                                </div>
+                                                <div class="flex gap-1" style="transform: none;">
+                                                    
+                                                    <div class="animate-fadethree" style="transform: none;">
+                                                        <div class="flex justify-center rounded-lg items-center mr-1" style="background: rgb(0, 57, 166); width: 1.5rem; height: 1.5rem; font-size: 0.9rem; color: white;">
+                                                            P
+                                                        </div>
+                                                    </div>
+                                                    
                                         </div>
-                                            <div class="flex gap-1" style="transform: none;">
-                                                
-                                                <div class="animate-fadethree transition-all" style="transform: none;">
-                                                    <div class="flex justify-center rounded-lg items-center mr-1" style="background: rgb(79, 121, 66); width: 1.5rem; height: 1.5rem; font-size: 0.9rem; color: white; animation-delay: 2s;">
-                                                        F
-                                                    </div>
-                                                </div>
-                                                
                                     </div>
-                                </div>
-                                </div>
-                                <hr class="line h">
-                                 <!--Individual Project-->
-                                 <div id="skill" class="project h">
-                                    <div class="flex items-center justify-between">
-                                        <div class="flex flex-col gap-1" style="opacity: 1; transform: none;">
-                                            <div class="flex items-center">
-                                                <h1 class="font-engineer uppercase font-[300] text-[0.75rem] sm:text-[0.85rem]">RaspberryPi Threat Analysis Lab</h1>
-                                                <a class="rotate-link font-mono ml-2 text-[0.85rem] text-logo-red sm:text-[0.85rem]" href="https://github.com/huntdamann/Security-Home-Lab">→</a>
-                                            </div>
-                                            <div class="pr-8">
-                                                <p class="font-rubik opacity-75 font-[200] text-[0.75rem] sm:text-[0.8rem]">[Description: Loading]</p> 
-                                            </div>
-                                            </div>
-                                            <div class="flex gap-1" style="transform: none;">
-                                                
-                                                <div class="animate-fadethree" style="transform: none;">
-                                                    <div class="flex justify-center rounded-lg items-center mr-1" style="background: rgb(0, 57, 166); width: 1.5rem; height: 1.5rem; font-size: 0.9rem; color: white;">
-                                                        P
-                                                    </div>
-                                                </div>
-                                                
                                     </div>
-                                </div>
-                                </div>
-                                <hr class="line h">
-                                 <!--Individual Project-->
-                                 <div class="project h">
-                                    <div class="flex items-center justify-between">
-                                        <div class="flex flex-col gap-1" style="opacity: 1; transform: none;">
-                                            <div class="flex items-center">
-                                                <h1 class="font-engineer uppercase font-[300] text-[0.75rem] sm:text-[0.85rem]">Graphic Design Website Nextjs</h1>
-                                                <a class="rotate-link font-mono ml-2 text-[0.85rem] text-logo-red sm:text-[0.85rem]" href="https://github.com/huntdamann/portfolio-app-next">→</a>
-                                            </div>
-                                            <div class="pr-8">
-                                                <p class="font-rubik opacity-75 font-[200] text-[0.75rem] sm:text-[0.8rem]">Responsive, sleek Graphic design portfolio template using Nextjs+TailwindCSS</p> 
-                                            </div>
-                                            </div>
-                                            <div class="flex gap-1" style="transform: none;">
-                                                
-                                                <div class="animate-fadethree" style="transform: none;">
-                                                    <div class="flex justify-center rounded-lg items-center mr-1" style="background: rgb(99, 3, 180); width: 1.5rem; height: 1.5rem; font-size: 0.9rem; color: white;">
-                                                        C
-                                                    </div>
+                                    <hr class="line h">
+                                     <!--Individual Project-->
+                                     <div class="project h">
+                                        <div class="flex items-center justify-between">
+                                            <div class="flex flex-col gap-1" style="opacity: 1; transform: none;">
+                                                <div class="flex items-center">
+                                                    <h1 class="font-engineer uppercase font-[300] text-[0.75rem] sm:text-[0.85rem]">Graphic Design Website Nextjs</h1>
+                                                    <a class="rotate-link font-mono ml-2 text-[0.85rem] text-logo-red sm:text-[0.85rem]" href="https://github.com/huntdamann/portfolio-app-next">→</a>
                                                 </div>
-                                                
-                                    </div>
-                                </div>
-                                </div>
-                                <hr class="line h">
-                                 <!--Individual Project-->
-                                 <div class="project h">
-                                    <div class="flex items-center justify-between">
-                                        <div class="flex flex-col gap-1" style="opacity: 1; transform: none;">
-                                            <div class="flex items-center">
-                                                <h1 class="font-engineer uppercase font-[300] text-[0.75rem] sm:text-[0.85rem]">Media Agency Landing Page</h1>
-                                                <a class="rotate-link font-mono ml-2 text-[0.85rem] text-logo-red sm:text-[0.85rem]" href="https://github.com/huntdamann/portfolio-app-next">→</a>
-                                            </div>
-                                            <div class="pr-8">
-                                                <p class="font-rubik opacity-75 font-[200]  text-[0.75rem] sm:text-[0.8rem]">Responsive Brand/Marketing Agency template using HTML+TailwindCSS+VanillaJS</p> 
-                                            </div>
-                                            </div>
-                                            <div class="flex gap-1" style="transform: none;">
-                                                
-                                                <div class="animate-fadethree" style="transform: none;">
-                                                    <div class="flex justify-center rounded-lg items-center mr-1" style="background: rgb(99, 3, 180); width: 1.5rem; height: 1.5rem; font-size: 0.9rem; color: white;">
-                                                        C
-                                                    </div>
+                                                <div class="pr-8">
+                                                    <p class="font-rubik opacity-75 font-[200] text-[0.75rem] sm:text-[0.8rem]">Responsive, sleek Graphic design portfolio template using Nextjs+TailwindCSS</p> 
                                                 </div>
-                                                
-                                    </div>
-                                </div>
-                                </div>
-                                <hr class="line h">
-                                              <!--Individual Project-->
-                                              <div class="project h">
-                                                <div class="flex items-center justify-between">
-                                                    <div class="flex flex-col gap-1" style="opacity: 1; transform: none;">
-                                                        <div class="flex items-center">
-                                                            <h1 class="font-engineer uppercase font-[300] text-[0.75rem] sm:text-[0.85rem]">Windows XP Theme for Jekyll</h1>
-                                                            <a class="rotate-link font-mono ml-2 text-[0.85rem] text-logo-red sm:text-[0.85rem]" href="https://github.com/huntdamann/portfolio-app-next">→</a>
+                                                </div>
+                                                <div class="flex gap-1" style="transform: none;">
+                                                    
+                                                    <div class="animate-fadethree" style="transform: none;">
+                                                        <div class="flex justify-center rounded-lg items-center mr-1" style="background: rgb(99, 3, 180); width: 1.5rem; height: 1.5rem; font-size: 0.9rem; color: white;">
+                                                            C
                                                         </div>
-                                                        <div class="pr-8">
-                                                            <p class="font-rubik opacity-75 font-[200]  text-[0.75rem] sm:text-[0.8rem]">Fun project inspired by h01000110. Codebase coming soon...</p> 
+                                                    </div>
+                                                    
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <hr class="line h">
+                                     <!--Individual Project-->
+                                     <div class="project h">
+                                        <div class="flex items-center justify-between">
+                                            <div class="flex flex-col gap-1" style="opacity: 1; transform: none;">
+                                                <div class="flex items-center">
+                                                    <h1 class="font-engineer uppercase font-[300] text-[0.75rem] sm:text-[0.85rem]">Media Agency Landing Page</h1>
+                                                    <a class="rotate-link font-mono ml-2 text-[0.85rem] text-logo-red sm:text-[0.85rem]" href="https://github.com/huntdamann/portfolio-app-next">→</a>
+                                                </div>
+                                                <div class="pr-8">
+                                                    <p class="font-rubik opacity-75 font-[200]  text-[0.75rem] sm:text-[0.8rem]">Responsive Brand/Marketing Agency template using HTML+TailwindCSS+VanillaJS</p> 
+                                                </div>
+                                                </div>
+                                                <div class="flex gap-1" style="transform: none;">
+                                                    
+                                                    <div class="animate-fadethree" style="transform: none;">
+                                                        <div class="flex justify-center rounded-lg items-center mr-1" style="background: rgb(99, 3, 180); width: 1.5rem; height: 1.5rem; font-size: 0.9rem; color: white;">
+                                                            C
                                                         </div>
-                                                        </div>
-                                                        <div class="flex gap-1" style="transform: none;">
-                                                            
-                                                            <div class="animate-fadethree" style="transform: none;">
-                                                                <div class="flex justify-center rounded-lg items-center mr-1" style="background: rgba(250, 170, 255); width: 1.5rem; height: 1.5rem; font-size: 0.9rem; color: white;">
-                                                                    R
-                                                                </div>
+                                                    </div>
+                                                    
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <hr class="line h">
+                                                  <!--Individual Project-->
+                                                  <div class="project h">
+                                                    <div class="flex items-center justify-between">
+                                                        <div class="flex flex-col gap-1" style="opacity: 1; transform: none;">
+                                                            <div class="flex items-center">
+                                                                <h1 class="font-engineer uppercase font-[300] text-[0.75rem] sm:text-[0.85rem]">Windows XP Theme for Jekyll</h1>
+                                                                <a class="rotate-link font-mono ml-2 text-[0.85rem] text-logo-red sm:text-[0.85rem]" href="https://github.com/huntdamann/portfolio-app-next">→</a>
                                                             </div>
-                                                            
+                                                            <div class="pr-8">
+                                                                <p class="font-rubik opacity-75 font-[200]  text-[0.75rem] sm:text-[0.8rem]">Fun project inspired by h01000110. Codebase coming soon...</p> 
+                                                            </div>
+                                                            </div>
+                                                            <div class="flex gap-1" style="transform: none;">
+                                                                
+                                                                <div class="animate-fadethree" style="transform: none;">
+                                                                    <div class="flex justify-center rounded-lg items-center mr-1" style="background: rgba(250, 170, 255); width: 1.5rem; height: 1.5rem; font-size: 0.9rem; color: white;">
+                                                                        R
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            </div>
-
+                                                </div>
+    
+                            </div>
                         </div>
                     </div>
-                </div>
-                </div>
-            </section>
-
-
-
-         <!--Skills-->
-         <section id="section" class="mt-3 font-engineer flex flex-col items-center h-full bg-[#8B0000] p-[2.25rem]">
-            <div class="text-[5.5vw]  font-[650] p-4 w-[25rem] small:ml-10 flex items-center gap-2">
-                
-                <span class="text-white">skills.
-
-            </div>
-            
-            <div class="h-full object-cover w-full text-white bg-[white] gap-2  flex flex-wrap flex-col items-center p-9">
-                
-                    <div id="skill" class=" hover:bg-red-900  flex transition-all bg-[#00171F] shadow-xl flex-col h-[6rem] w-[6rem] p-8 gap-7 justify-center items-center rounded-full text-2xl border;">
-
-                        <i style="color: skyblue; margin-top: 12px;" class="fa-brands fa-2xl fa-react"></i>
-                        <span class="text-sm">ReactJS</span>
                     </div>
-                    <div class="flex bg-[#00171F] shadow-xl flex-col h-[6rem] w-[6rem] p-8 gap-3 justify-center items-center rounded-full text-2xl border">
-
-
-                        <div class="w-[2rem] ">
-                            <img class="w-full h-full" src="https://icons.iconarchive.com/icons/papirus-team/papirus-apps/256/python-icon.png" alt="" >
-  
-                        </div>                           
-                        <span class="text-sm">Python</span>
-                    </div>
-                    <div class="flex bg-[#00171F] shadow-xl flex-col h-[6rem] w-[6rem] p-8 gap-3 justify-center items-center rounded-full text-2xl border">
-
-
-                        <div class="w-[2rem] ">
-                            <img class="w-full h-full" src="https://img.icons8.com/?size=100&id=TpULddJc4gTh&format=png&color=000000" alt="" ">
-  
-                        </div>                           
-                        <span class="text-sm">C++</span>
-                    </div>
-                    <div class="flex bg-[#00171F] shadow-xl flex-col h-[6rem] w-[6rem] p-8 gap-3 justify-center items-center rounded-full text-2xl border">
-
-
-                        <div class="w-[2rem] ">
-                            <img class="w-full h-full" src="https://icons.iconarchive.com/icons/arturo-wibawa/akar/128/nextjs-icon.png" alt="" style="color: red; background-color: white; border-radius: 5rem;">
-  
-                        </div>                           
-                        <span class="text-sm">NextJS</span>
-                    </div>
-                    <div class="flex bg-[#00171F] shadow-xl flex-col h-[6rem] w-[6rem] p-8 gap-3 justify-center items-center rounded-full text-2xl border">
-
-
-                        <div class="w-[2rem] ">
-                            <img class="w-full h-full" src="https://img.icons8.com/?size=100&id=hsPbhkOH4FMe&format=png&color=000000" alt="" >
-  
-                        </div>                           
-                        <span class="text-sm">nodeJS</span>
-                    </div>
-
-                    <div class="flex bg-[#00171F] shadow-xl flex-col h-[6rem] w-[6rem] p-8 gap-3 justify-center items-center rounded-full text-2xl border">
-
-
-                        <div class="w-[2rem] ">
-                            <img class="w-full h-full" src="https://icons.iconarchive.com/icons/cornmanthe3rd/plex/256/Other-html-5-icon.png" alt="" >
-  
-                        </div>                           
-                        <span class="text-sm">HTML5</span>
-                
-                    </div>
+                </section>
+    
+    
+    
+             <!--Skills-->
+             <section id="section" class="mt-3 font-engineer flex flex-col items-center h-full bg-[#8B0000] p-[2.25rem]">
+                <div class="text-[5.5vw]  font-[650] p-4 w-[25rem] small:ml-10 flex items-center gap-2">
                     
-                    <div class="flex bg-[#00171F] shadow-xl flex-col h-[6rem] w-[6rem] p-8 gap-3 justify-center items-center rounded-full text-2xl border">
-
-
-                        <div class="w-[2rem] ">
-                            <img class="w-full h-full" src="https://www.xilinx.com/content/dam/xilinx/imgs/kits/whats-inside/sp701-top.jpg" alt="" >
-  
-                        </div>                           
-                        <span class="text-xs">HardwareSec</span>
+                    <span class="text-white">skills.
+    
+                </div>
                 
-                    </div>
-                    <div class="flex bg-[#00171F] shadow-xl flex-col h-[6rem] w-[6rem] p-8 gap-3 justify-center items-center rounded-full text-2xl border">
-
-
-                        <div class="w-[2rem] ">
-                            <img class="w-full h-full" src="https://img.icons8.com/?size=100&id=4PiNHtUJVbLs&format=png&color=000000" alt="">
-  
-                        </div>                           
-                        <span class="text-sm">TailwindCSS</span>
-                    </div>
-                    <div class="flex bg-[#00171F] shadow-xl flex-col h-[6rem] w-[6rem] p-8 gap-3 justify-center items-center rounded-full text-2xl border">
-
-
-                        <div class="w-[2rem] ">
-                            <img class="w-full h-full" src="https://icons.iconarchive.com/icons/designbolts/cute-social-2014/256/CSS3-icon.png" alt="">
-  
-                        </div>                           
-                        <span class="text-sm">CSS3</span>
-                    </div>
-                    <div class="flex bg-[#00171F] shadow-xl flex-col h-[6rem] w-[6rem] p-8 gap-3 justify-center items-center rounded-full text-2xl border">
-
-
-                        <div class="w-[2rem] ">
-                            <img class="w-full h-full" src="https://icons.iconarchive.com/icons/ionic/ionicons/256/logo-sass-icon.png" alt="" style="color: red; background-color: red;">
-  
-                        </div>                              
-                        <span class="text-sm">SaSS</span>
-                    </div>
-                    <div class="flex bg-[#00171F] shadow-xl flex-col h-[6rem] w-[6rem] p-8 gap-3 justify-center items-center rounded-full text-2xl border">
-
-
-                        <div class="w-[2rem] ">
-                            <img class="w-full h-full" src="https://icons.iconarchive.com/icons/limav/flat-gradient-social/256/Github-icon.png" alt="">
-  
-                        </div>                              
-                        <span class="text-sm">Github</span>
-                    </div>
-                    <div class="flex bg-[#00171F] shadow-xl flex-col h-[6rem] w-[6rem] p-8 gap-3 justify-center items-center rounded-full text-2xl border">
-
-
-                        <div class="w-[2rem] ">
-                            <img class="w-full h-full" src="https://icons.iconarchive.com/icons/martz90/circle/256/wordpress-icon.png" alt="">
-  
-                        </div>                              
-                        <span class="text-sm">WordPress</span>
-                    </div>
-                    <div class="flex bg-[#00171F] shadow-xl flex-col h-[6rem] w-[6rem] p-8 gap-3 justify-center items-center rounded-full text-2xl border">
-
-
-                        <div class="w-[2rem] ">
-                            <img class="w-full h-full" src="https://icons.iconarchive.com/icons/dakirby309/simply-styled/256/Adobe-Photoshop-icon.png" alt="">
-  
-                        </div>                              
-                        <span class="text-sm">Photoshop</span>
-                    </div>
-                    <div class="flex bg-[#00171F] shadow-xl flex-col h-[6rem] w-[6rem] p-8 gap-1 justify-center items-center rounded-full text-2xl border">
-
-                        <div class="w-[2rem] ">
-                            <img class="w-full h-full" src="https://icons.iconarchive.com/icons/designbolts/retro-3d-adobe/256/Adobe-Premiere-Pro-CC-icon.png" alt="">
-  
-                        </div>                        
-                        <span class="text-sm">Premiere</span>
-                    </div>
-                    <div class="flex bg-[#00171F] shadow-xl flex-col h-[6rem] w-[6rem] p-8 gap-1 justify-center items-center rounded-full text-2xl border">
-
-                        <div class="w-[2rem] ">
-                            <img class="w-full h-full" style="background-color: white;" src="https://icons.iconarchive.com/icons/iconoir-team/iconoir/256/figma-icon.png" alt="">
-  
-                        </div>                        
-                        <span class="text-sm ">Figma </span>
-                    </div>
-                    <div class="flex bg-[#00171F] shadow-xl flex-col h-[6rem] w-[6rem] p-8 gap-3 justify-center items-center rounded-full text-2xl border">
-
-                        <div class="w-[2rem] ">
-                            <img class="w-full h-full" src="https://icons.iconarchive.com/icons/everaldo/crystal-clear/128/Mimetype-php-icon.png" alt="">
-  
-                        </div>                        
-                        <span class="text-sm">PHP</span>
-                    </div>
-                    <div class="flex bg-[#00171F] shadow-xl flex-col h-[6rem] w-[6rem] p-8 gap-3 justify-center items-center rounded-full text-2xl border">
-
-                        <div class="w-[2rem] ">
-                            <img class="w-full h-full" src="https://img.icons8.com/?size=100&id=22813&format=png&color=000000" alt="">
-  
-                        </div>                        
-                        <span class="text-sm">Docker</span>
-                    </div>
-                    <div class="flex bg-[#00171F] shadow-xl flex-col h-[6rem] w-[6rem] p-8 gap-3 justify-center items-center rounded-full text-2xl border">
-                        <div class="w-[2rem] ">
-                            <img class="w-full h-full" src="https://icons.iconarchive.com/icons/bokehlicia/captiva/128/wireshark-icon.png" alt="">
-  
+                <div class="h-full object-cover w-full text-white bg-[white] gap-2  flex flex-wrap flex-col items-center p-9">
+                    
+                        <div id="skill" class=" hover:bg-red-900  flex transition-all bg-[#00171F] shadow-xl flex-col h-[6rem] w-[6rem] p-8 gap-7 justify-center items-center rounded-full text-2xl border;">
+    
+                            <i style="color: skyblue; margin-top: 12px;" class="fa-brands fa-2xl fa-react"></i>
+                            <span class="text-sm">ReactJS</span>
                         </div>
-                        <span class="text-sm">Wireshark</span>
-                    </div>
-                    <div class="flex bg-[#00171F] shadow-xl flex-col h-[6rem] w-[6rem] p-8 gap-3 justify-center items-center rounded-full text-2xl border">
-
-                        <div class="w-[2rem] ">
-                            <img class="w-full h-full" src="https://icons.iconarchive.com/icons/goescat/macaron/256/burp-suite-icon.png" alt="">
-  
+                        <div class="flex bg-[#00171F] shadow-xl flex-col h-[6rem] w-[6rem] p-8 gap-3 justify-center items-center rounded-full text-2xl border">
+    
+    
+                            <div class="w-[2rem] ">
+                                <img class="w-full h-full" src="https://icons.iconarchive.com/icons/papirus-team/papirus-apps/256/python-icon.png" alt="" >
+      
+                            </div>                           
+                            <span class="text-sm">Python</span>
                         </div>
-                        <span class="text-sm">BurpSuite</span>
-                    </div>
+                        <div class="flex bg-[#00171F] shadow-xl flex-col h-[6rem] w-[6rem] p-8 gap-3 justify-center items-center rounded-full text-2xl border">
+    
+    
+                            <div class="w-[2rem] ">
+                                <img class="w-full h-full" src="https://img.icons8.com/?size=100&id=TpULddJc4gTh&format=png&color=000000" alt="" ">
+      
+                            </div>                           
+                            <span class="text-sm">C++</span>
+                        </div>
+                        <div class="flex bg-[#00171F] shadow-xl flex-col h-[6rem] w-[6rem] p-8 gap-3 justify-center items-center rounded-full text-2xl border">
+    
+    
+                            <div class="w-[2rem] ">
+                                <img class="w-full h-full" src="https://icons.iconarchive.com/icons/arturo-wibawa/akar/128/nextjs-icon.png" alt="" style="color: red; background-color: white; border-radius: 5rem;">
+      
+                            </div>                           
+                            <span class="text-sm">NextJS</span>
+                        </div>
+                        <div class="flex bg-[#00171F] shadow-xl flex-col h-[6rem] w-[6rem] p-8 gap-3 justify-center items-center rounded-full text-2xl border">
+    
+    
+                            <div class="w-[2rem] ">
+                                <img class="w-full h-full" src="https://img.icons8.com/?size=100&id=hsPbhkOH4FMe&format=png&color=000000" alt="" >
+      
+                            </div>                           
+                            <span class="text-sm">nodeJS</span>
+                        </div>
+    
+                        <div class="flex bg-[#00171F] shadow-xl flex-col h-[6rem] w-[6rem] p-8 gap-3 justify-center items-center rounded-full text-2xl border">
+    
+    
+                            <div class="w-[2rem] ">
+                                <img class="w-full h-full" src="https://icons.iconarchive.com/icons/cornmanthe3rd/plex/256/Other-html-5-icon.png" alt="" >
+      
+                            </div>                           
+                            <span class="text-sm">HTML5</span>
+                    
+                        </div>
+                        
+                        <div class="flex bg-[#00171F] shadow-xl flex-col h-[6rem] w-[6rem] p-8 gap-3 justify-center items-center rounded-full text-2xl border">
+    
+    
+                            <div class="w-[2rem] ">
+                                <img class="w-full h-full" src="https://www.xilinx.com/content/dam/xilinx/imgs/kits/whats-inside/sp701-top.jpg" alt="" >
+      
+                            </div>                           
+                            <span class="text-xs">HardwareSec</span>
+                    
+                        </div>
+                        <div class="flex bg-[#00171F] shadow-xl flex-col h-[6rem] w-[6rem] p-8 gap-3 justify-center items-center rounded-full text-2xl border">
+    
+    
+                            <div class="w-[2rem] ">
+                                <img class="w-full h-full" src="https://img.icons8.com/?size=100&id=4PiNHtUJVbLs&format=png&color=000000" alt="">
+      
+                            </div>                           
+                            <span class="text-sm">TailwindCSS</span>
+                        </div>
+                        <div class="flex bg-[#00171F] shadow-xl flex-col h-[6rem] w-[6rem] p-8 gap-3 justify-center items-center rounded-full text-2xl border">
+    
+    
+                            <div class="w-[2rem] ">
+                                <img class="w-full h-full" src="https://icons.iconarchive.com/icons/designbolts/cute-social-2014/256/CSS3-icon.png" alt="">
+      
+                            </div>                           
+                            <span class="text-sm">CSS3</span>
+                        </div>
+                        <div class="flex bg-[#00171F] shadow-xl flex-col h-[6rem] w-[6rem] p-8 gap-3 justify-center items-center rounded-full text-2xl border">
+    
+    
+                            <div class="w-[2rem] ">
+                                <img class="w-full h-full" src="https://icons.iconarchive.com/icons/ionic/ionicons/256/logo-sass-icon.png" alt="" style="color: red; background-color: red;">
+      
+                            </div>                              
+                            <span class="text-sm">SaSS</span>
+                        </div>
+                        <div class="flex bg-[#00171F] shadow-xl flex-col h-[6rem] w-[6rem] p-8 gap-3 justify-center items-center rounded-full text-2xl border">
+    
+    
+                            <div class="w-[2rem] ">
+                                <img class="w-full h-full" src="https://icons.iconarchive.com/icons/limav/flat-gradient-social/256/Github-icon.png" alt="">
+      
+                            </div>                              
+                            <span class="text-sm">Github</span>
+                        </div>
+                        <div class="flex bg-[#00171F] shadow-xl flex-col h-[6rem] w-[6rem] p-8 gap-3 justify-center items-center rounded-full text-2xl border">
+    
+    
+                            <div class="w-[2rem] ">
+                                <img class="w-full h-full" src="https://icons.iconarchive.com/icons/martz90/circle/256/wordpress-icon.png" alt="">
+      
+                            </div>                              
+                            <span class="text-sm">WordPress</span>
+                        </div>
+                        <div class="flex bg-[#00171F] shadow-xl flex-col h-[6rem] w-[6rem] p-8 gap-3 justify-center items-center rounded-full text-2xl border">
+    
+    
+                            <div class="w-[2rem] ">
+                                <img class="w-full h-full" src="https://icons.iconarchive.com/icons/dakirby309/simply-styled/256/Adobe-Photoshop-icon.png" alt="">
+      
+                            </div>                              
+                            <span class="text-sm">Photoshop</span>
+                        </div>
+                        <div class="flex bg-[#00171F] shadow-xl flex-col h-[6rem] w-[6rem] p-8 gap-1 justify-center items-center rounded-full text-2xl border">
+    
+                            <div class="w-[2rem] ">
+                                <img class="w-full h-full" src="https://icons.iconarchive.com/icons/designbolts/retro-3d-adobe/256/Adobe-Premiere-Pro-CC-icon.png" alt="">
+      
+                            </div>                        
+                            <span class="text-sm">Premiere</span>
+                        </div>
+                        <div class="flex bg-[#00171F] shadow-xl flex-col h-[6rem] w-[6rem] p-8 gap-1 justify-center items-center rounded-full text-2xl border">
+    
+                            <div class="w-[2rem] ">
+                                <img class="w-full h-full" style="background-color: white;" src="https://icons.iconarchive.com/icons/iconoir-team/iconoir/256/figma-icon.png" alt="">
+      
+                            </div>                        
+                            <span class="text-sm ">Figma </span>
+                        </div>
+                        <div class="flex bg-[#00171F] shadow-xl flex-col h-[6rem] w-[6rem] p-8 gap-3 justify-center items-center rounded-full text-2xl border">
+    
+                            <div class="w-[2rem] ">
+                                <img class="w-full h-full" src="https://icons.iconarchive.com/icons/everaldo/crystal-clear/128/Mimetype-php-icon.png" alt="">
+      
+                            </div>                        
+                            <span class="text-sm">PHP</span>
+                        </div>
+                        <div class="flex bg-[#00171F] shadow-xl flex-col h-[6rem] w-[6rem] p-8 gap-3 justify-center items-center rounded-full text-2xl border">
+    
+                            <div class="w-[2rem] ">
+                                <img class="w-full h-full" src="https://img.icons8.com/?size=100&id=22813&format=png&color=000000" alt="">
+      
+                            </div>                        
+                            <span class="text-sm">Docker</span>
+                        </div>
+                        <div class="flex bg-[#00171F] shadow-xl flex-col h-[6rem] w-[6rem] p-8 gap-3 justify-center items-center rounded-full text-2xl border">
+                            <div class="w-[2rem] ">
+                                <img class="w-full h-full" src="https://icons.iconarchive.com/icons/bokehlicia/captiva/128/wireshark-icon.png" alt="">
+      
+                            </div>
+                            <span class="text-sm">Wireshark</span>
+                        </div>
+                        <div class="flex bg-[#00171F] shadow-xl flex-col h-[6rem] w-[6rem] p-8 gap-3 justify-center items-center rounded-full text-2xl border">
+    
+                            <div class="w-[2rem] ">
+                                <img class="w-full h-full" src="https://icons.iconarchive.com/icons/goescat/macaron/256/burp-suite-icon.png" alt="">
+      
+                            </div>
+                            <span class="text-sm">BurpSuite</span>
+                        </div>
+                       
+                        
+                        
+                        
+                        
+    
                    
-                    
-                    
-                    
-                    
-
-               
-            </div>
-        </section>
-
-
-
-
-
-        <!--Education-->
-        <section id="worksection" class="p-2 mt-[4.5rem]">
-            <div class="w-full mb-8">
-            <div class="w-full flex flex-col items-center  p-0 py-1">
-               
-                <div class="flex flex-col items-center border p-2 border-black justify-center small:w-[17rem]">
-                        <div class="w-full relative flex-col flex items-center justify-center p-20 font-mono font-thin text-[0.75rem]">
-                            <div id="pic-container" class="picture">
-                                <img class="w-full h-full" alt="random marker scribble" fetchpriority="high" width="900" height="574" decoding="async" data-nimg="1" src="./src/university-of-tennessee-knoxville-football-jo-powers.jpg" style="color: transparent; width: 10rem; height: 10rem;">
- 
-                            </div>
-                            <p class="absolute left-[0.4rem] bottom-[0.25rem] uppercase text-[0.6rem]">education.</p>
-                            <p class="absolute top-[0.4rem] right-[0.4rem] text-[0.6rem]">
-                                [24]
-
-                            </p>
-                            <p class="absolute bottom-0 left-[13rem]">[0:key]</p>
-                            
-                        </div>
-
-                    
                 </div>
-                <div class="font-mono font-thin text-[0.3rem] small:text-[0.75rem]" style="writing-mode: horizontal-tb;">
-                    <p>65 74 65 72 6E 61 6C 6C 79</p>
-                    <p>75 6E 66 69 6E FA 11 20 20 </p>
-            </div>
-            </div>
-            </div>
-        </section>
-        
-
-
-            <!--Work and Experience-->
-            <section id="" class="p-5 font-engineer sm:p-10">
-                <div class="font-mono flex items-center justify-center">
-                    <p>---</p>
-                </div>
-                <article class="flex flex-col justify-evenly h-[50%]">
-                    <h1 class="text-[7.5vw]">work.</h1>
-                    <main>
-                        <main>
-                            <div class="flex items-center font-rubik text-[0.75rem] gap-[4vw] p-3 ">
-                                <div>
-                                    <h1 class="text-[0.9rem] sm:text-[1rem]">Web Developer</h1>
-                                    <p class="text-[0.75rem] mt-1">Freelance</p>
-                                </div>
-                                <p class="font-mono ml-auto font-thin text-[0.6rem] sm:text-[0.75rem]">2024- Present</p>
-                            </div>
-                            <hr class="bg-black opacity-50">
-                        </main>
-                        <main>
-                            <div class="flex items-center font-rubik text-[0.75rem] gap-[4vw] p-3 ">
-                                <div>
-                                    <h1 class="text-[0.9rem] sm:text-[1rem]">Pentester and Bug Bounty</h1>
-                                    <p class="text-[0.75rem] mt-1">Freelance Cybersecurity Research</p>
-                                </div>
-                                <p class="font-mono ml-auto font-thin text-[0.6rem] sm:text-[0.75rem]">2023 - Present</p>
-                            </div>
-                            <hr class="bg-black opacity-50">
-                        </main>
-                        <div class="flex items-center font-rubik text-[0.75rem] gap-[4vw] p-3 ">
-                            <div>
-                                <h1 class="text-[0.9rem] sm:text-[1rem]">Security Research Engineer</h1>
-                                <p class="text-[0.75rem] mt-1">Cisco Systems</p>
-                            </div>
-                            <p class="font-mono ml-auto font-thin text-[0.6rem] sm:text-[0.75rem]">2021 - 2023</p>
-                        </div>
-                        <hr class="bg-black opacity-50">
-                    </main>
-                    <main>
-                        <div class="flex items-center font-rubik text-[0.75rem] gap-[4vw] p-3 ">
-                            <div>
-                                <h1 class="text-[0.9rem] sm:text-[1rem]">Security Research Engineer Intern</h1>
-                                <p class="text-[0.75rem] mt-1">Cisco Systems</p>
-                            </div>
-                            <p class="font-mono ml-auto font-thin text-[0.6rem] sm:text-[0.75rem]">2018 - 2021</p>
-                        </div>
-                        <hr class="bg-black opacity-50">
-                    </main>
-                    <main>
-                        <div class="flex items-center font-rubik text-[0.75rem] gap-[4vw] p-3 ">
-                            <div>
-                                <h1 class="text-[0.9rem] sm:text-[1rem]">Telecommunications & Web Design</h1>
-                                <p class="text-[0.75rem] mt-1">National Society of Black Engineers - Knoxville Chapter </p></div><p class="font-mono ml-auto font-thin text-[0.6rem] sm:text-[0.75rem]">2018 - 2019</p>
-                            
-                                
-                            
-                            </div>
-                            <hr class="bg-black opacity-50">
-                        </main>
-                        <main>
-                            <div class="flex items-center font-rubik text-[0.75rem] gap-[4vw] p-3 ">
-                                <div>
-                                    <h1 class="text-[0.9rem] sm:text-[1rem]">3D Printing Lab Technician</h1>
-                                    <p class="text-[0.75rem] mt-1">ICS 3D Printing Lab</p>
-                                </div>
-                                <p class="font-mono ml-auto font-thin text-[0.6rem] sm:text-[0.75rem]">2017 - 2018</p>
-                            </div>
-                            <hr class="bg-black opacity-50">
-                        </main>
-                        <main>
-                            <div class="flex items-center font-rubik text-[0.75rem] gap-[4vw] p-3 ">
-                                <div>
-                                    <h1 class="text-[0.9rem] sm:text-[1rem]">Undergraduate Research Assistant - Hardware Security</h1>
-                                    <p class="text-[0.75rem] mt-1">University of Tennessee at Knoxville</p>
-                                </div>
-                                <p class="font-mono ml-auto font-thin text-[0.6rem] sm:text-[0.75rem]">2017</p>
-                            </div>
-                            <hr class="bg-black opacity-50">
-                        </main>
-                        <main>
-                            <div class="flex items-center font-rubik text-[0.75rem] gap-[4vw] p-3 ">
-                                <div>
-                                    <h1 class="text-[0.9rem] sm:text-[1rem]">IT Technician Assistant</h1>
-                                    <p class="text-[0.75rem] mt-1">Dyersburg High School</p>
-                                </div>
-                                <p class="font-mono ml-auto font-thin text-[0.6rem] sm:text-[0.75rem]">2015 - 2016</p>
-                            </div>
-                            <hr class="bg-black opacity-50">
-                        </main>
-                    </article>
             </section>
-
-
-
-            <!--Footer for each page-->
-            <footer id="footer" class="bg-[#00171F] text-white mt-20 flex flex-col items-center text-lg sm:justify-between p-5 sm:p-12">
-                <div class="w-full flex justify-between items-end">
-                    <div class="w-full">
-                        <p class="font-sans lowercase text-[9vw] sm:text-[3.5vw] leading-none">contact me.
-
-                        </p>
+    
+    
+    
+    
+    
+            <!--Education-->
+            <section id="worksection" class="p-2 mt-[4.5rem]">
+                <div class="w-full mb-8">
+                <div class="w-full flex flex-col items-center  p-0 py-1">
+                   
+                    <div class="flex flex-col items-center border p-2 border-black justify-center small:w-[17rem]">
+                            <div class="w-full relative flex-col flex items-center justify-center p-20 font-mono font-thin text-[0.75rem]">
+                                <div id="pic-container" class="picture">
+                                    <img class="w-full h-full" alt="random marker scribble" fetchpriority="high" width="900" height="574" decoding="async" data-nimg="1" src="./src/university-of-tennessee-knoxville-football-jo-powers.jpg" style="color: transparent; width: 10rem; height: 10rem;">
+     
+                                </div>
+                                <p class="absolute left-[0.4rem] bottom-[0.25rem] uppercase text-[0.6rem]">education.</p>
+                                <p class="absolute top-[0.4rem] right-[0.4rem] text-[0.6rem]">
+                                    [24]
+    
+                                </p>
+                                <p class="absolute bottom-0 left-[13rem]">[0:key]</p>
+                                
+                            </div>
+    
+                        
                     </div>
-                    <div class="flex flex-col items-center">
-                       [remember to add here]
-                    </div>
+                    <div class="font-mono font-thin text-[0.3rem] small:text-[0.75rem]" style="writing-mode: horizontal-tb;">
+                        <p>65 74 65 72 6E 61 6C 6C 79</p>
+                        <p>75 6E 66 69 6E FA 11 20 20 </p>
                 </div>
-                <hr class="w-full my-4 sm:my-6">
-                <div class="w-full flex justify-between font-mono font-thin text-[0.75rem] sm:text-[0.6rem]">
-                    <div class="flex flex-col small:gap-[0.25rem] justify-between uppercase">
-                        <a target="" href="https://www.linkedin.com/in/hunter-mann-140178127/">linkedin →</a>
-                        <a target="" href="https://twitter.com/huntdatechguy">x →</a>
-                        <a target="" href="https://github.com/huntdamann">github →</a>
-                        <a target="" href="https://www.goodreads.com/user/show/177529798-hunter">GoodReads →</a>
-                        <a target="" href="mailto:hunter.mann24@gmail.com">hunter.mann24@gmail.com →</a>
-                        <a target="" href="mailto:leeman.hunt24@gmail.com">leeman.hunt24@gmail.com →</a>
+                </div>
+                </div>
+            </section>
+            
+    
+    
+                <!--Work and Experience-->
+                <section id="" class="p-5 font-engineer sm:p-10">
+                    <div class="font-mono flex items-center justify-center">
+                        <p>---</p>
                     </div>
-                    <div class="flex flex-col gap-1 items-end">
-                        <p>
-                            <span class="font-mono mr-1 text-[0.75rem] ">© 2024</span>
-                            <span class="font-sans text-[0.85rem]">Hunter Mann</span>
-                        </p>
-                        <div class="flex flex-col gap-1 uppercase text-right text-[0.75rem] sm:text-[0.6rem]">
-                            <p>designed and coded by hunter mann.</p>
-                            <p>inspired by kostya farber.</p>
-                            <p>"life's a game, but if you become a creator of game, doors will open..." </p>
+                    <article class="flex flex-col justify-evenly h-[50%]">
+                        <h1 class="text-[7.5vw]">work.</h1>
+                        <main>
+                            <main>
+                                <div class="flex items-center font-rubik text-[0.75rem] gap-[4vw] p-3 ">
+                                    <div>
+                                        <h1 class="text-[0.9rem] sm:text-[1rem]">Web Developer</h1>
+                                        <p class="text-[0.75rem] mt-1">Freelance</p>
+                                    </div>
+                                    <p class="font-mono ml-auto font-thin text-[0.6rem] sm:text-[0.75rem]">2024- Present</p>
+                                </div>
+                                <hr class="bg-black opacity-50">
+                            </main>
+                            <main>
+                                <div class="flex items-center font-rubik text-[0.75rem] gap-[4vw] p-3 ">
+                                    <div>
+                                        <h1 class="text-[0.9rem] sm:text-[1rem]">Pentester and Bug Bounty</h1>
+                                        <p class="text-[0.75rem] mt-1">Freelance Cybersecurity Research</p>
+                                    </div>
+                                    <p class="font-mono ml-auto font-thin text-[0.6rem] sm:text-[0.75rem]">2023 - Present</p>
+                                </div>
+                                <hr class="bg-black opacity-50">
+                            </main>
+                            <div class="flex items-center font-rubik text-[0.75rem] gap-[4vw] p-3 ">
+                                <div>
+                                    <h1 class="text-[0.9rem] sm:text-[1rem]">Security Research Engineer</h1>
+                                    <p class="text-[0.75rem] mt-1">Cisco Systems</p>
+                                </div>
+                                <p class="font-mono ml-auto font-thin text-[0.6rem] sm:text-[0.75rem]">2021 - 2023</p>
+                            </div>
+                            <hr class="bg-black opacity-50">
+                        </main>
+                        <main>
+                            <div class="flex items-center font-rubik text-[0.75rem] gap-[4vw] p-3 ">
+                                <div>
+                                    <h1 class="text-[0.9rem] sm:text-[1rem]">Security Research Engineer Intern</h1>
+                                    <p class="text-[0.75rem] mt-1">Cisco Systems</p>
+                                </div>
+                                <p class="font-mono ml-auto font-thin text-[0.6rem] sm:text-[0.75rem]">2018 - 2021</p>
+                            </div>
+                            <hr class="bg-black opacity-50">
+                        </main>
+                        <main>
+                            <div class="flex items-center font-rubik text-[0.75rem] gap-[4vw] p-3 ">
+                                <div>
+                                    <h1 class="text-[0.9rem] sm:text-[1rem]">Telecommunications & Web Design</h1>
+                                    <p class="text-[0.75rem] mt-1">National Society of Black Engineers - Knoxville Chapter </p></div><p class="font-mono ml-auto font-thin text-[0.6rem] sm:text-[0.75rem]">2018 - 2019</p>
+                                
+                                    
+                                
+                                </div>
+                                <hr class="bg-black opacity-50">
+                            </main>
+                            <main>
+                                <div class="flex items-center font-rubik text-[0.75rem] gap-[4vw] p-3 ">
+                                    <div>
+                                        <h1 class="text-[0.9rem] sm:text-[1rem]">3D Printing Lab Technician</h1>
+                                        <p class="text-[0.75rem] mt-1">ICS 3D Printing Lab</p>
+                                    </div>
+                                    <p class="font-mono ml-auto font-thin text-[0.6rem] sm:text-[0.75rem]">2017 - 2018</p>
+                                </div>
+                                <hr class="bg-black opacity-50">
+                            </main>
+                            <main>
+                                <div class="flex items-center font-rubik text-[0.75rem] gap-[4vw] p-3 ">
+                                    <div>
+                                        <h1 class="text-[0.9rem] sm:text-[1rem]">Undergraduate Research Assistant - Hardware Security</h1>
+                                        <p class="text-[0.75rem] mt-1">University of Tennessee at Knoxville</p>
+                                    </div>
+                                    <p class="font-mono ml-auto font-thin text-[0.6rem] sm:text-[0.75rem]">2017</p>
+                                </div>
+                                <hr class="bg-black opacity-50">
+                            </main>
+                            <main>
+                                <div class="flex items-center font-rubik text-[0.75rem] gap-[4vw] p-3 ">
+                                    <div>
+                                        <h1 class="text-[0.9rem] sm:text-[1rem]">IT Technician Assistant</h1>
+                                        <p class="text-[0.75rem] mt-1">Dyersburg High School</p>
+                                    </div>
+                                    <p class="font-mono ml-auto font-thin text-[0.6rem] sm:text-[0.75rem]">2015 - 2016</p>
+                                </div>
+                                <hr class="bg-black opacity-50">
+                            </main>
+                        </article>
+                </section>
+    
+    
+    
+                <!--Footer for each page-->
+                <footer id="footer" class="bg-[#00171F] text-white mt-20 flex flex-col items-center text-lg sm:justify-between p-5 sm:p-12">
+                    <div class="w-full flex justify-between items-end">
+                        <div class="w-full">
+                            <p class="font-sans lowercase text-[9vw] sm:text-[3.5vw] leading-none">contact me.
+    
+                            </p>
+                        </div>
+                        <div class="flex flex-col items-center">
+                           [remember to add here]
                         </div>
                     </div>
-                </div>
-            </footer>
-
+                    <hr class="w-full my-4 sm:my-6">
+                    <div class="w-full flex justify-between font-mono font-thin text-[0.75rem] sm:text-[0.6rem]">
+                        <div class="flex flex-col small:gap-[0.25rem] justify-between uppercase">
+                            <a target="" href="https://www.linkedin.com/in/hunter-mann-140178127/">linkedin →</a>
+                            <a target="" href="https://twitter.com/huntdatechguy">x →</a>
+                            <a target="" href="https://github.com/huntdamann">github →</a>
+                            <a target="" href="https://www.goodreads.com/user/show/177529798-hunter">GoodReads →</a>
+                            <a target="" href="mailto:hunter.mann24@gmail.com">hunter.mann24@gmail.com →</a>
+                            <a target="" href="mailto:leeman.hunt24@gmail.com">leeman.hunt24@gmail.com →</a>
+                        </div>
+                        <div class="flex flex-col gap-1 items-end">
+                            <p>
+                                <span class="font-mono mr-1 text-[0.75rem] ">© 2024</span>
+                                <span class="font-sans text-[0.85rem]">Hunter Mann</span>
+                            </p>
+                            <div class="flex flex-col gap-1 uppercase text-right text-[0.75rem] sm:text-[0.6rem]">
+                                <p>designed and coded by hunter mann.</p>
+                                <p>inspired by kostya farber.</p>
+                                <p>"life's a game, but if you become a creator of game, doors will open..." </p>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+    
+            </section>
         </section>
-    </section>
+
+    </main>
+    <!--Entire Content-->
+   
     <script src="./src/js/main.js" defer></script>
     <script src="./src/js/observer.js" defer></script>
     <script src="./node_modules/intersection-observer/intersection-observer.js"></script>

@@ -27,8 +27,8 @@ module.exports = {
       keyframes: {
 
         fadeDown: {
-          '0%': { opacity: '0', transform: 'translateY(-30px) scale(0.9)'},
-          '100%': {opacity: '1', transform: 'translateY(0px) scale(1)'}
+          '0%': { opacity: '0', transform: 'translateX(-90px)'},
+          '100%': {opacity: '1', transform: 'translateX(0px)'}
 
         },
         fadeUp: {
