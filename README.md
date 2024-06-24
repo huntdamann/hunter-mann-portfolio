@@ -13,13 +13,14 @@
 ## Mobile Design (in progress)
 |   Feature     | Status          
 | ------------- |:-------------:|
-| Adding transition to elements     | In Progress | 
-| Build Section      | In progress      |
+| Adding transition to Skill elements     | In Progress | 
+| Build Section      | Done      |
 | Skills  | Done     |
 | Animations | In progress      |
 | Education and Schooling | Done      |
 | Finishing adding more books  | Done      |
 | Add QR Code | Not Started      |
+| Page Transition | Done      |
 
 ## Tablet Design (Not started)
 |   Feature     | Status          
