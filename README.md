@@ -37,7 +37,8 @@
 |   Feature     | Status          
 | ------------- |:-------------:|
 | Adding transition to elements     | In Progress | 
-| Build Section      | Not Started      |
+| Build Section      | In Progress      |
+| Media query | In Progress | 
 | Add QR Code | Not Started      |
 | Add QR Code | Not Started      |
 | Add QR Code | Not Started      |
