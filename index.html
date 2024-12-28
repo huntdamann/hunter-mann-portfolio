@@ -10,7 +10,7 @@
     <script defer src="./src/js/page-transit.js"></script>
     <title>Hunter Mann | Engineer, Developer, Problem-solver</title>
 
-    <link rel="stylesheet" href="./styles/styles.css">
+   
     <link rel="stylesheet" href="./styles/output.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -54,11 +54,7 @@
             <div id="burger-handle" onclick="burgerClick()" class="burger-icon">
                 <i class="fa-solid fa-xl fa-bars-staggered"></i>
             </div>
-            <div class="small:opacity-0 lg:opacity-100">
-                <span class="lg:text-3xl">
-                    Website is currently designed for MOBILE ONLY
-                </span>
-            </div>
+           
             <nav id="menu-handle" class="menu">
                 <i onclick="doorClick()" class="fa-solid fa-2xl fa-door-open" style="position: absolute; right: 1rem; top: -10px;"></i>
                 <ul class="text-[4rem] tracking-wider font-[600] p-3">
@@ -218,7 +214,7 @@
     
                 <!--About Me-->
                 <section id="about" class="mt-10 animate-fadetwo transition-all p-3">
-                    <div class="h-[95vh] flex-col bg-slate-400 font-[500] overflow-hidden rounded-lg relative flex items-center justify-center">
+                    <div id="whoami-section" class="h-[95vh] flex-col bg-slate-400 font-[500] overflow-hidden rounded-lg relative flex items-center justify-center">
                         <div class="w-[80%] h-full flex flex-col items-center">
                             <article class="w-full  h-full font-mono text-[0.6rem] small:text-[0.8rem] font-thin small:mr-[5.5rem]">
                                 <fieldset class="border-[5px] p-3 border-black w-[30rem] h-full">
@@ -277,9 +273,9 @@
                     
                 </section>
                 <!--Projects and Blogs-->
-                <section class="p-2 mt-20 ml-8 font-engineer">
+                <section id="projects" class="p-2 mt-20 ml-8 font-engineer">
                     <div class="w-full mb-8">
-                    <div class="w-full flex p-0 py-1">
+                    <div id="d" class="w-full flex p-0 py-1">
                         <div class="font-mono font-thin text-[0.3rem] small:text-[0.75rem]" style="writing-mode: vertical-lr;">
                                 <p>65 74 65 72 6E 61 6C 6C 79</p>
                                 <p>75 6E 66 69 6E 69 73 68 65 64 2E</p>
@@ -293,7 +289,7 @@
     
                                     </p>
                                     <p class="absolute bottom-0 left-[13rem]">[0:key]</p>
-                                    <div class="flex flex-col  p-3 absolute top-[12rem] w-[8rem]">
+                                    <div id="key-for-projects" class="flex flex-col border p-3 absolute top-[12rem] w-[8rem]">
                                         <div class="flex items-center">
                                             <div style="transform: none;">
                                                 <div class="flex justify-center rounded-full items-center mr-1" style="background: rgba(250, 170, 255); width: 1.0rem; height: 1.0rem; font-size: 0.6rem; color: white;">
@@ -698,7 +694,7 @@
                     <div class="flex flex-col items-center border p-2 border-black justify-center small:w-[17rem]">
                             <div class="w-full relative flex-col flex items-center justify-center p-20 font-mono font-thin text-[0.75rem]">
                                 <div id="pic-container" class="picture">
-                                    <img class="w-full h-full" alt="random marker scribble" fetchpriority="high" width="900" height="574" decoding="async" data-nimg="1" src="./src/university-of-tennessee-knoxville-football-jo-powers.jpg" style="color: transparent; width: 10rem; height: 10rem;">
+                                    <img class="w-full h-full" alt="random marker scribble" fetchpriority="high" width="900" height="574" decoding="async" data-nimg="1" src="./src/university-of-tennessee-knoxville-football-jo-powers.jpg" style=" width: 10rem; height: 10rem;">
      
                                 </div>
                                 <p class="absolute left-[0.4rem] bottom-[0.25rem] uppercase text-[0.6rem]">education.</p>
@@ -858,7 +854,10 @@
     <!--Entire Content-->
    
     <script src="./src/js/main.js" defer></script>
-    <script src="./src/js/observer.js" defer></script>
-    <script src="./node_modules/intersection-observer/intersection-observer.js"></script>
+
+    <!--    <script src="./node_modules/intersection-observer/intersection-observer.js"></script>
+            <script src="./src/js/observer.js" defer></script>
+
+-->
 </body>
 </html>

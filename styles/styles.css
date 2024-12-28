@@ -33,7 +33,7 @@
     @apply opacity-0 z-[-1];
   }
   .burger-icon {
-    @apply text-red-800 lg:opacity-0 ml-[10rem];
+    @apply text-red-800  ml-[10rem];
   }
   .first-project {
     @apply mt-20 mb-2 animate-skill;
@@ -48,7 +48,7 @@
   }
 
   .n {
-    @apply flex h-[3rem] z-[999] top-0 small:bg-white gap-6 items-center justify-between lg:bg-red-300;
+    @apply flex h-[3rem] z-[999] top-0 small:bg-white gap-6 items-center justify-between fixed border border-red-300;
   }
 
   .pop {

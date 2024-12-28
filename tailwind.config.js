@@ -1,13 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./**/*.{html,js}", "./src/**/*.{html,js}", "./src/observer.js", "./src/main.js", ],
+  mode: 'jit',
+  content: ["./**/*.html", "./src/**/*.{html,js}", "./src/observer.js", "./src/main.js", ],
   theme: {
    
     extend: {
       screens: {
         mobile: "375px",
   
-        "mobile-2": "414px",
+        mobile2: "414px",
         samsung: "412px",
         small: "320px",
       },
@@ -90,7 +91,7 @@ module.exports = {
   plugins: [
     require("tailwindcss-animation-delay"),
     require("tailwindcss-animate"),
-    require("@xpd/tailwind-3dtransforms")
+    //require("@xpd/tailwind-3dtransforms")
     
   ],
 };
