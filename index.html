@@ -56,7 +56,7 @@
             </div>
            
             <nav id="menu-handle" class="menu">
-                <i onclick="doorClick()" class="fa-solid fa-2xl fa-door-open" style="position: absolute; right: 1rem; top: -10px;"></i>
+                <i id="door-handle" onclick="doorClick()" class="fa-solid fa-2xl fa-door-open" style="position: absolute; right: 1rem; top: -10px;"></i>
                 <ul class="text-[4rem] tracking-wider font-[600] p-3">
                     <div class="w-[80vw]">
                         <hr class="bg-black opacity-50">
@@ -508,7 +508,7 @@
                 
                 <div class="h-full object-cover w-full text-white bg-[white] gap-2  flex flex-wrap flex-col items-center p-9">
                     
-                        <div id="skill" class=" hover:bg-red-900  flex transition-all bg-[#00171F] shadow-xl flex-col h-[6rem] w-[6rem] p-8 gap-7 justify-center items-center rounded-full text-2xl border;">
+                        <div id="sk" class="skills">
     
                             <i style="color: skyblue; margin-top: 12px;" class="fa-brands fa-2xl fa-react"></i>
                             <span class="text-sm">ReactJS</span>
@@ -732,7 +732,7 @@
                                         <span class="text-[0.9rem] sm:text-[1rem]">Web Developer</span>
                                         <p class="text-[0.75rem] mt-1">Freelance</p>
                                     </div>
-                                    <p class="font-mono ml-auto font-thin text-[0.6rem] sm:text-[0.75rem]">2024- Present</p>
+                                    <p class="font-mono ml-auto font-thin text-[0.6rem] sm:text-[0.75rem]">2023 - Present</p>
                                 </div>
                                 <hr class="bg-black opacity-50">
                             </main>
@@ -853,6 +853,7 @@
     </main>
     <!--Entire Content-->
    
+    <script src="./src/js/observer.js"></script>
     <script src="./src/js/main.js" defer></script>
 
     <!--    <script src="./node_modules/intersection-observer/intersection-observer.js"></script>

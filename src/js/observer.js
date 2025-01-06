@@ -1,26 +1,28 @@
 const workSection = document.getElementById('worksection')
 const picture = document.getElementById('pic-container')
-const skill = document.getElementById('skill')
+const skill = document.querySelector('#sk')
 
 
-
-window.addEventListener(
-    "load",
-    (event) => {
-      createObserver();
-    },
-    false,
-  );
-
-
-let options = {
-    root: document.querySelector("#skill"),
+const options = {
+    root: null,
     rootMargin: "0px",
     threshold: 1.0,
 
 };
 
-let observer = new IntersectionObserver(callback,options);
+const callback = (entries, observer) => {
+  entries.forEach((entry) => {
+
+    if (entry.isIntersecting) {
+      console.log(entry);
+    }
+
+  })
+}
+
+const observer = new IntersectionObserver(callback,options);
+
+observer.observe(skill);
 
 
 

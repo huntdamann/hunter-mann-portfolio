@@ -46,6 +46,9 @@
   .line {
     @apply my-4;
   }
+  .skills {
+    @apply hover:bg-red-900  flex transition-all bg-[#00171F] shadow-xl flex-col h-[6rem] w-[6rem] p-8 gap-7 justify-center items-center rounded-full text-2xl border;
+  }
 
   .n {
     @apply flex h-[3rem] z-[999] top-0 small:bg-white gap-6 items-center justify-between fixed border border-red-300;

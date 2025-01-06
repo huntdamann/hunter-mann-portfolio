@@ -7,14 +7,13 @@ console.log(
 
 
 
-const burgerIcon = document.getElementById("burger-handle");
+const burgerIcon = document.querySelector("#burger-handle");
 const menu = document.getElementById("menu-handle");
-const doorIcon = document.getElementById("door-handle");
+const doorIcon = document.querySelector("#door-handle");
 const menuOptions = document.querySelectorAll("#menu-option");
 const menuButtons = document.querySelectorAll("#menu-button");
 
-console.log(menuOptions);
-console.log(burgerIcon);
+
 
 let prevScrollPos = window.scrollY;
 
@@ -27,7 +26,7 @@ function burgerClick() {
     burgerIcon.classList.toggle('hide'); 
     menuOptions.forEach(entry => {
 
-      console.log("Animating")
+      
       entry.classList.add('showText');
       
     })
@@ -38,7 +37,7 @@ function burgerClick() {
       
     })
     
-    console.log('Show Menu');
+   
     show = 1;
   }
 }
@@ -46,7 +45,7 @@ function doorClick() {
     if (show==1) {
         menu.classList.toggle('show');
         burgerIcon.classList.toggle('hide');
-        console.log('Close Menu')
+        
         menuOptions.forEach(entry => {
 
           

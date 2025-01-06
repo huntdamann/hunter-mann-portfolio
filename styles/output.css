@@ -1837,8 +1837,10 @@ video {
 @media (min-width: 1024px) {
  
   #whoami-section {
-    margin: 40rem;
+    margin: 30rem;
+    border: 1px red solid;
     padding: 3rem;
+    width: 38rem;
   }
   #pic-container {
    
